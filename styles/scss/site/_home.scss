@@ -1,0 +1,103 @@
+/*----------------------------banner-header-------------------------------*/
+#banner{
+  background-image: linear-gradient(90deg, #00000096 0%, #00000042 10%, #00000000 100%),url(../../assets/images/header/header-d.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: calc(100vh + 150px);
+  padding-top: 150px;
+  h1, p{
+    color: $white;
+  }
+  h1{
+    font-weight: 300;
+    padding-bottom: 10px;
+    span{
+      font-weight: 600;
+    }
+  }
+  .line{
+    border-bottom: 2px solid $white;
+    width: 20%;
+    margin-bottom: 21px;
+  }
+}
+/*----------------------------Description-------------------------------*/
+.descriptions{
+  background-image: url(../../assets/images/descriptions/fondo.png);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+/*  &_left{
+    position: relative;
+    z-index: 2;
+  }*/
+  &_text{
+/*    position: relative;
+    z-index: 2;*/
+  }
+  &_banner{
+    background-image: url(../../assets/images/descriptions/fotob.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+  &_right{
+    margin-left: auto;
+    padding-top: 40px;
+    padding-bottom: 20px;
+    padding-right: 50px;
+    padding-left: 40px;
+/*    z-index: 1;
+    &::before{
+      content: "";
+      position: absolute;
+      height: 86%;
+      background: #fff;
+      z-index: 1;
+      // width: 73%;
+      right: 80px;
+      top: 7%;
+    }*/
+    img.logo{
+      max-width: 150px;
+      width: 100%;
+      margin-bottom: 18px;
+    }
+  }
+  &_table{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin-top: 18px;
+    p{
+      margin-bottom: 0;
+    }
+    .line{
+      margin: 11px 0;
+      border-bottom: 1px solid $lightgrey;
+    }
+  }
+  .button{
+    margin-top: 23px;
+  }
+  &_logos{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    column-gap: 60px;
+    margin-top: 24px;
+    .text {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      font-size: 16px;
+    }
+    img{
+      max-width: 110px;
+      width: 100%;
+      height: 40px;
+      margin-top: 10px;
+    }
+  }
+}
