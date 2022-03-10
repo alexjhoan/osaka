@@ -14,3 +14,14 @@ new WOW({offset:offset, scrollContainer: null}).init()
 
 $('header').load('components/header.html')
 $('footer').load('components/footer.html')
+
+// ------------------------------Locations-----------------------------
+$(".list .locations_item").click(function(){
+  let type = $(this).data("type")
+  $(`.${type}`).addClass("active").siblings().removeClass("active")
+  $(this).addClass("selector").siblings().removeClass("selector")
+ });
+
+$(".mybtn").click(function(){
+  $(".locations_right div").addClass("active").siblings().removeClass("selector")
+});
