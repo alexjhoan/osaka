@@ -558,3 +558,29 @@
     }
   }
 }
+/*----------------------------Gallery-----------------------------------*/
+.amenities-footer{
+  &_right{
+    position: relative;
+    width: 50%;
+    margin-left: auto;
+    .imgA{
+      position: absolute;
+      left: 0px;
+      right: 0px;
+      margin-right: auto;
+      margin-left: auto;
+      bottom: -215px;
+      max-width: 488px;
+      width: 100%;
+      z-index: -1;
+    }
+    .imgB{
+      position: absolute;
+      right: 0;
+      top: 0;
+      max-width: 245px;
+      width: 100%;
+    }
+  }
+}
