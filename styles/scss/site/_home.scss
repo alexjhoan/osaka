@@ -386,11 +386,34 @@
       height: auto;
     }
   }
+  .col-img {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    .project{
+      max-width: 470px;
+    }
+  }
+  .edfLevelUrl {
+    text-align: center;
+    img{
+      max-width: 350px;
+    }
+  }
   &_download {
     display: flex;
     flex-direction: row;
-    justify-content: flex-end;
+    justify-content: space-between;
     margin-top: 15px;
+    &_b{
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+    }
+    .measures{
+      width: 15px;
+      margin-right: 10px;
+    }
     .down {
       width: 15px;
       margin-right: 10px;
@@ -406,5 +429,12 @@
       font-weight: 500;
       color: $primary;
     }
+  }
+  &_progress{
+    border-bottom: 2px solid #cecece;
+    width: 50%;
+    padding-top: 20px;
+    margin-left: auto;
+    margin-right: auto;
   }
 }
