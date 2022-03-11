@@ -5,6 +5,12 @@
 body{
   opacity: 0;
 }
+p.h2, h2, .h2{
+  font-weight: 700;
+}
+p.h3, h3 .h3{
+  font-weight: 300;
+}
 p.h1, h1, p.h2, h2, p.h3, h3{
   font-family: Kanit;
   color: $primary;

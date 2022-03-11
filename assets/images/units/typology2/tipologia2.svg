@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 25.4.1, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 543 337.8" style="enable-background:new 0 0 543 337.8;" xml:space="preserve">
+<style type="text/css">
+	.st0{opacity:0.81;fill:#DCB3D2;enable-background:new    ;}
+	.st1{fill:none;stroke:#FFFFFF;stroke-width:3;stroke-linecap:round;stroke-linejoin:round;}
+	.st2{fill:#FFFFFF;}
+	.st3{font-family:'Roboto-Bold';}
+	.st4{font-size:12px;}
+	.st5{fill:none;stroke:#8A5874;stroke-width:2;stroke-miterlimit:10;}
+	.st6{fill:#8A5874;stroke:#8A5874;stroke-width:2;stroke-miterlimit:10;}
+	.st7{fill:#8A5874;}
+	.st8{fill:none;}
+</style>
+<g id="Casa_2_dorm_background">
+	
+		<image style="overflow:visible;enable-background:new    ;" width="1463" height="1130" xlink:href="A44CCA1791890C66.png"  transform="matrix(0.2991 0 0 0.2991 105.3761 -8.555122e-02)">
+	</image>
+</g>
+<g id="Planta_Baja">
+	<polygon class="st0" points="112.4,186.6 372.1,190.6 520.5,183.5 520.5,292.6 387.8,335.7 110.8,298.9 	"/>
+	<polygon class="st1" points="113.4,186.6 373.1,190.6 521.5,183.5 521.5,292.6 388.8,335.7 111.8,298.9 	"/>
+	<text transform="matrix(1 0 0 1 5.11 249.7002)" class="st2 st3 st4">P</text>
+	<text transform="matrix(1 0 0 1 12.85 249.7002)" class="st2 st3 st4">L</text>
+	<line id="Línea_140144-2-2" class="st5" x1="130.8" y1="246" x2="85.9" y2="246"/>
+	<g id="Grupo_1806-2-2">
+		<circle id="Elipse_90-2-2" class="st6" cx="130.7" cy="246" r="1.7"/>
+	</g>
+	
+		<rect id="Rectángulo_41-2_00000107589249773540810670000011950043484385946291_" x="23.6" y="225.8" class="st7" width="62.3" height="37.1"/>
+	<g>
+		<rect x="23.6" y="232.1" class="st8" width="62.3" height="29.8"/>
+		<text transform="matrix(1 0 0 1 31.591 241.0527)" class="st2 st3 st4">PLANTA</text>
+		<text transform="matrix(1 0 0 1 39.691 255.4527)" class="st2 st3 st4">BAJA</text>
+	</g>
+</g>
+<g id="Planta_Alta">
+	<polygon class="st0" points="112.4,43.2 112.4,184.6 372.1,190.1 531.4,182.3 530.4,53.4 371.4,3.4 182.3,28.3 182.3,34.5 	"/>
+	<polygon class="st1" points="113.4,43.2 113.4,184.6 373.1,190.1 532.4,182.3 531.4,53.4 372.4,3.4 183.3,28.3 183.3,34.5 	"/>
+	<line id="Línea_140144-2" class="st5" x1="130.8" y1="118.3" x2="85.9" y2="118.3"/>
+	<g id="Grupo_1806-2">
+		<circle id="Elipse_90-2" class="st6" cx="130.7" cy="118.3" r="1.7"/>
+	</g>
+	<rect id="Rectángulo_41-2" x="23.6" y="100.4" class="st7" width="62.3" height="37.1"/>
+	<g>
+		<rect x="23.6" y="106.7" class="st8" width="62.3" height="29.8"/>
+		<text transform="matrix(1 0 0 1 31.591 115.7521)" class="st2 st3 st4">PLANTA</text>
+		<text transform="matrix(1 0 0 1 39.691 130.1521)" class="st2 st3 st4">ALTA</text>
+	</g>
+</g>
+</svg>

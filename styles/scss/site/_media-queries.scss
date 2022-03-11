@@ -44,4 +44,24 @@
   #banner{
     background-image: linear-gradient(90deg, #00000096 0%, #00000042 10%, #00000000 100%),url(../../assets/images/header/header-m.jpg);
   }
+  .units-design{
+    text-align: left;
+    &_master {
+      p{
+        transform: rotate(0deg);
+      }
+    flex-direction: column;
+    align-items: flex-start;
+  }
+    &_footer {
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
+      row-gap: 21px;
+      margin-top: 55px;
+      &_text{
+        align-items: center;
+      }
+    }
+  }
 }

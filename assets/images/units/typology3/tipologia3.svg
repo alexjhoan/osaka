@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 25.4.1, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 582.7 328.4" style="enable-background:new 0 0 582.7 328.4;" xml:space="preserve">
+<style type="text/css">
+	.st0{opacity:0.81;fill:#DCB3D2;enable-background:new    ;}
+	.st1{fill:none;stroke:#FFFFFF;stroke-width:3;stroke-linecap:round;stroke-linejoin:round;}
+	.st2{fill:#FFFFFF;}
+	.st3{font-family:'Roboto-Bold';}
+	.st4{font-size:12px;}
+	.st5{fill:none;stroke:#8A5874;stroke-width:2;stroke-miterlimit:10;}
+	.st6{fill:#8A5874;stroke:#8A5874;stroke-width:2;stroke-miterlimit:10;}
+	.st7{fill:#8A5874;}
+	.st8{fill:none;}
+</style>
+<g id="casa_3_dorm_background">
+	
+		<image style="overflow:visible;enable-background:new    ;" width="1420" height="985" xlink:href="AA45B224CE558867.png"  transform="matrix(0.33 0 0 0.33 114.1199 0.49)">
+	</image>
+</g>
+<g id="Planta_baja">
+	<path id="Trazado_11327-3" class="st0" d="M114.9,180.9l210.2,5.3l218.2-3.3l0.5,112.6l-214,31.4l-214.9-46V180.9z"/>
+	<path id="Trazado_11329" class="st1" d="M114.9,180.9l210.2,5.3l218.2-3.3l0.5,112.6l-214,31.4l-214.9-46V180.9z"/>
+	<text transform="matrix(1 0 0 1 5.11 226.6299)" class="st2 st3 st4">P</text>
+	<text transform="matrix(1 0 0 1 12.85 226.6299)" class="st2 st3 st4">L</text>
+	<line id="Línea_140144-2-2" class="st5" x1="166.8" y1="223" x2="85.9" y2="223"/>
+	<circle id="Elipse_90-2-2" class="st6" cx="166.7" cy="223" r="1.7"/>
+	
+		<rect id="Rectángulo_41-2_00000039820862269625721850000008085705504061030581_" x="26.9" y="204.5" class="st7" width="62.3" height="37.1"/>
+	<g>
+		<rect x="26.9" y="210.8" class="st8" width="62.3" height="29.8"/>
+		<text transform="matrix(1 0 0 1 34.891 219.8449)"><tspan x="0" y="0" class="st2 st3 st4">PLANTA</tspan><tspan x="7.9" y="14.4" class="st2 st3 st4">BAJA</tspan></text>
+	</g>
+</g>
+<g id="Planta_Alta">
+	<path id="Trazado_11327" class="st0" d="M112.8,181l210.2,5.3l256.9-3.3l-0.4-141.3l-257-39.2L144,42.1l0.2,6.1l-31.4,6.5V181z"/>
+	<path id="Trazado_11327-2" class="st1" d="M112.8,180l210.2,5.3l256.9-3.3l-0.4-141.3l-257-39.2L144,41.1l0.2,6.1l-31.4,6.5V180z"
+		/>
+	<rect id="Rectángulo_41-2" x="26.9" y="90.9" class="st7" width="62.3" height="37.1"/>
+	<line id="Línea_140144-2" class="st5" x1="130.8" y1="108.9" x2="85.9" y2="108.9"/>
+	<circle id="Elipse_90-2" class="st6" cx="130.7" cy="108.9" r="1.7"/>
+	<g>
+		<rect x="26.9" y="97.2" class="st8" width="62.3" height="29.8"/>
+		<text transform="matrix(1 0 0 1 34.891 106.2027)"><tspan x="0" y="0" class="st2 st3 st4">PLANTA</tspan><tspan x="8.1" y="14.4" class="st2 st3 st4">ALTA</tspan></text>
+	</g>
+</g>
+</svg>

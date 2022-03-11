@@ -91,12 +91,12 @@
     top: 0;
     right: 0;
   }
-  p.h3{
-    font-weight: 300;
-    span.h2{
-      font-weight: 700;
-    }
-  }
+  // p.h3{
+  //   font-weight: 300;
+  //   span.h2{
+  //     font-weight: 700;
+  //   }
+  // }
     &_item{
     display: flex;
     flex-direction: row;
@@ -298,6 +298,113 @@
         bottom: 19%;
         right: 45%;
       }
+    }
+  }
+}
+/*----------------------------Units-Design-------------------------------*/
+.units-design{
+  background-color: $secondary;
+  text-align: center;
+  p.h2 {
+    margin-bottom: 10px;
+  }
+  &_master {
+    p{
+      font-family: 'Kanit';
+      color: $primary;
+      font-weight: 300;
+      transform: rotate(-90deg);
+      margin-bottom: 0;
+    }
+    margin-top: 34px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+  }
+  &_footer {
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    column-gap: 25px;
+    margin-top: 45px;
+    margin-bottom: 30px;
+    &_chart{
+      display: flex;
+      align-items: center;
+      margin-top: 2px;
+      canvas#myChart {
+        width: 110px!important;
+        height: auto!important;
+        margin-right: -25px;
+      }
+      img.porcentage{
+        width: 80px;
+        padding-right: 20px;
+      }
+      .titleFoo {
+        line-height: 0.8;
+        font-style: normal!important;
+        color: $primary;
+        span{
+          font-size: 0.75rem;
+        }
+      }
+    }
+    &_text{
+      position: relative;
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      h5{
+        font-family: 'Roboto';
+        font-style: italic;
+        color: $text;
+        font-weight: 400;
+      }
+      &::before{
+        content: '';
+        position: absolute;
+        left: -4%;
+        height: 60px;
+        width: 1px;
+        background: #cecece;
+      }
+    }
+  }
+}
+/*----------------------------Units-----------------------------------*/
+.units{
+  #nameLevel{
+    color: $primary;
+    font-weight: 500;
+    display: flex;
+    justify-content: space-between;
+    align-content: center;
+    img{
+      width: 22px;
+      height: auto;
+    }
+  }
+  &_download {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    margin-top: 15px;
+    .down {
+      width: 15px;
+      margin-right: 10px;
+    }
+    .zoom{
+      width: 25px;
+      margin-left: 20px;
+      transform: translateY(-3px);
+    }
+    a{
+      text-decoration: none;
+      font-size: 1rem;
+      font-weight: 500;
+      color: $primary;
     }
   }
 }
