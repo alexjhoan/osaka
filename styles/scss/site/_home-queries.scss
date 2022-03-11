@@ -46,6 +46,9 @@
   #unitsGallery {
     width: 100%;
   }
+  .advance {
+    margin-top: 14px;
+  }
 }
 @media (max-width: 991.98px) {
   #banner{
@@ -157,6 +160,31 @@
       }
     }
   }
+  .advance{
+    margin-top: 48px;
+    &_line img{
+      width: 70%;
+    }
+    &_icons-text{
+      .inic{
+        width: 46%;
+      }
+      .finish{
+        width: 40%;
+      }
+    }
+  }
+  #gallery{
+    #lightgallery {
+      grid-template-columns: repeat(4, 1fr);
+      margin-top: 10px;
+    }
+  }
+  .contact{
+    &_form2{
+      margin-top: 20px;
+    }
+  }
 }
 
 @media (max-width: 767.98px) {
@@ -173,6 +201,40 @@
         &::after{
           font-size: 20px;
         }
+      }
+    }
+  }
+}
+
+@media (max-width: 575.98px){
+  .advance{
+    &_line{
+      img{
+        width: 65%;
+      }
+    }
+    &_icons-text{
+      .inic{
+        width: 60%;
+      }
+      .finish{
+        width: 50%;
+      }
+    }
+  }
+}
+
+@media (max-width: 425px){
+  .advance{
+    &_line img{
+      width: 55%;
+    }
+    &_icons-text{
+      .inic{
+        width: 85%;
+      }
+      .finish{
+        width: 70%;
       }
     }
   }
