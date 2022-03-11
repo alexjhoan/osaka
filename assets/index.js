@@ -51,3 +51,23 @@ var chart = new Chart(ctx, {
         }
     }
 });
+// ------------------------------Units Gallery-----------------------------
+const galleryThumbs = new Swiper('.gallery-thumbs', {
+  spaceBetween: 20,
+  loop: true,
+  slidesPerView: 7,
+  freeMode: true,
+  watchSlidesVisibility: true,
+  watchSlidesProgress: true,
+});
+const galleryTop = new Swiper('.gallery-top', {
+  spaceBetween: 10,
+  loop: true,
+  navigation: {
+    nextEl: '.swiper-button-next',
+    prevEl: '.swiper-button-prev',
+  },
+  thumbs: {
+    swiper: galleryThumbs
+  }
+});

@@ -487,3 +487,23 @@
     }
   }
 }
+/*----------------------------Gallery-----------------------------------*/
+#unitsGallery {
+  width: 1000px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-bottom: 68px;
+  .gallery-thumbs {
+    margin-top: 30px;
+    .swiper-slide:hover {
+      cursor: pointer;
+    }
+  }
+  .gallery-top{
+    .swiper-button-white{
+      &::after{
+        color: $white;
+      }
+    }
+  }
+}
