@@ -392,12 +392,16 @@
     justify-content: center;
     .project{
       max-width: 470px;
+      width: 100%;
+      margin-left: auto;
+      margin-right: auto;
     }
   }
   .edfLevelUrl {
     text-align: center;
-    img{
+    .edfImgLevel{
       max-width: 350px;
+      width: 100%;
     }
   }
   &_download {
@@ -433,8 +437,53 @@
   &_progress{
     border-bottom: 2px solid #cecece;
     width: 50%;
-    padding-top: 20px;
     margin-left: auto;
     margin-right: auto;
+    margin-top: 42px;
+    margin-bottom: 70px;
+  }
+}
+/*----------------------------Lanscape-Paisajismo-----------------------------------*/
+.landscape{
+  &_banner{
+    &::after{
+      content: "";
+      position: absolute;
+      background-image: url(../../assets/images/landscape/fondod.png);
+      background-position: center;
+      background-size: cover;
+      background-repeat: no-repeat;
+      width: 45%;
+      height: 100%;
+      left: 0;
+      top: 0;
+      z-index: -1;
+    }
+  }
+  &_img{
+    position: absolute;
+    background-image: url(../../assets/images/landscape/landscape-day.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 60%;
+    height: 100%;
+    right: 0;
+    top: 0;
+    z-index: -2;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: end;
+    padding-bottom: 40px;
+    a{
+      color: $white;
+      text-decoration: none;
+      font-weight: 500;
+      img{
+        width: 105px;
+        margin-left: 17px;
+      }
+    }
   }
 }
