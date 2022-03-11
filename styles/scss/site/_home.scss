@@ -507,3 +507,46 @@
     }
   }
 }
+/*----------------------------Gallery-----------------------------------*/
+.amenities{
+  padding-top: 0px;
+  margin-top: 30px;
+  &_banner{
+    background-image: url(../../assets/images/amenities/fondod.png);
+    background-size: 100% 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    position: relative;
+    padding-top: 75px;
+    padding-bottom: 50px;
+    &_img{
+      position: absolute;
+      top: 0;
+      max-width: 433px;
+      width: 100%;
+      left: 10%;
+    }
+    &_right{
+      margin-left: auto;
+    }
+  }
+  &_icons{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+    margin-bottom: 65px;
+    margin-top: 36px;
+    &_frame{
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      img {
+        max-width: 85px;
+        width: 100%;
+        margin-bottom: 14px;
+      }
+      p{
+        text-align: center;
+      }
+    }
+  }
+}
