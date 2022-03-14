@@ -1,5 +1,20 @@
 $(window).on('load', function () {
   $('body').css('opacity', '1');
+
+
+
+  $("header .nav-link").click(function (e) {
+    e.preventDefault()
+    $("header .collapse.show").removeClass("show")
+    const url = $(this).attr("href")
+    const header = $("header").height()
+    if (!url.includes("html")) {
+      const section = $(url.slice(1)).offset().top;
+      window.scrollTo({top: section - header,behavior: "smooth"});
+    } else{
+      window.location = url
+    }
+  })
 });
 
 let offset
@@ -11,6 +26,12 @@ if (screen.width > 768){
 }
 
 new WOW({offset:offset, scrollContainer: null}).init()
+
+$(".edfLevelUrl").fancybox({
+  overlay : {
+    closeClick : true,
+  }
+});
 
 $('header').load('components/header.html')
 $('footer').load('components/footer.html')
@@ -92,7 +113,7 @@ function dataSubmited(data) {
     'Content-type': 'application/json; charset=UTF-8',
     },
   };
-  fetch("https://www.infocasas.com.uy/proyectos/austin?&formulario=1&json=1", requestOptions)
+  fetch("https://www.infocasas.com.uy/proyectos/torre-munich?&formulario=1&json=1", requestOptions)
   .then((json) => {
     setTimeout(()=>{
       if (json.status === 200) {
