@@ -415,6 +415,7 @@
       justify-content: space-between;
     }
     .measures{
+
       width: 15px;
       margin-right: 10px;
     }
@@ -427,7 +428,9 @@
       margin-left: 20px;
       transform: translateY(-3px);
     }
-    a{
+    a, button{
+      border: none;
+      background-color: $white;
       text-decoration: none;
       font-size: 1rem;
       font-weight: 500;
@@ -441,6 +444,64 @@
     margin-right: auto;
     margin-top: 42px;
     margin-bottom: 70px;
+  }
+}
+/*--------------------------------Modal---------------------*/
+.modal {
+  .modal-content {
+    padding: 50px 70px;
+    border-radius: 40px;
+    .btn-close {
+      color: #005170;
+      border: none;
+      position: absolute;
+      right: 50px;
+      top: 50px;
+      z-index: 2;
+    }
+    .btn-close:hover, .btn-close:focus, .btn-close:active {
+        color: #707070;
+        text-decoration: none;
+        cursor: pointer;
+        outline: none;
+        box-shadow: none;
+    }
+    .modal-body{
+      display: grid;
+      grid-template-columns: 35% auto;
+      column-gap: 35px;
+      .col-left{
+        p.h3, span.h5{
+          color: $primary;
+        }
+        p.line{
+          border-bottom: 1px solid #cecece;
+          width: 100%;
+          padding: 10px 0;
+          margin-bottom: 0;
+        }
+        p.mt-3{
+          font-size: 0.875rem;
+        }
+      }
+      .col-right{
+        display: flex;
+        flex-direction: row;
+        align-items: flex-start;
+        justify-content: flex-end;
+        column-gap: 70px;
+        .img-right {
+          width: 100%;
+          max-width: 350px;
+        }
+        .compass {
+          width: 22px;
+          height: auto;
+          margin-top: 30px;
+        }
+      }
+
+    }
   }
 }
 /*----------------------------Lanscape-Paisajismo-----------------------------------*/

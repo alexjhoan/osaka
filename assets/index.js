@@ -51,6 +51,16 @@ var chart = new Chart(ctx, {
         }
     }
 });
+// ------------------------------My Modal----------------------------
+$('#myModalA').on('shown.bs.modal', function () {
+  $('#myInput').trigger('focus')
+})
+$('#myModalB').on('shown.bs.modal', function () {
+  $('#myInput').trigger('focus')
+})
+$('#myModalC').on('shown.bs.modal', function () {
+  $('#myInput').trigger('focus')
+})
 // ------------------------------Units Gallery-----------------------------
 const galleryThumbs = new Swiper('.gallery-thumbs', {
   spaceBetween: 20,
