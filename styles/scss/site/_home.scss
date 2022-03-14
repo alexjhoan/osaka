@@ -386,6 +386,23 @@
       height: auto;
     }
   }
+  .edf-select{
+    opacity:0;
+    cursor: pointer;
+    &.active{
+      opacity:1;
+    }
+    &:not(.active):hover{
+      opacity: 1;
+
+      .st0{
+        stroke: $lightpink;
+        stroke-width: 5px;
+        fill: #0000;
+      }
+
+    }
+  }
   .col-img {
     display: flex;
     flex-direction: column;

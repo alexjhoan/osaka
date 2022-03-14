@@ -1,7 +1,18 @@
 $(window).on('load', function () {
   $('body').css('opacity', '1');
 
-
+  $(".edf-select").on("click touchstart" ,function () {
+    const nameLevel = this.id.replaceAll('_',' ')
+    const capitalize = nameLevel.slice(0,1).toUpperCase() + nameLevel.slice(1)
+    $(this).addClass('active').siblings().removeClass("active")
+    $('.edfImgLevel').attr('src',`assets/images/units/plantas/${this.id}.png`)
+    $(".edfLevelUrl").attr('href',`assets/images/units/plantas/${this.id}.png`)
+    if (this.id == "planta_baja") {
+      $("#nameLevel span").text("Planta Baja")
+    } else {
+      $("#nameLevel span").text("Planta Alta")
+    }
+  })
 
   $("header .nav-link").click(function (e) {
     e.preventDefault()
