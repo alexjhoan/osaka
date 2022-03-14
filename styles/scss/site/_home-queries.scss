@@ -111,17 +111,18 @@
       align-items: flex-start;
       padding-left: 30px;
       padding-top: 40px;
-      transform: translateY(80px);
+      transform: translateY(85px);
     }
   }
   #unitsGallery {
     padding-bottom: 50px;
   }
   .amenities{
+    margin-top: 0;
     &_banner{
       background-image: url(../../assets/images/amenities/fondom.png);
       padding-top: 150px;
-      transform: translateY(70px);
+      transform: translateY(160px);
       z-index: -1;
       &_img{
         position: relative;
@@ -129,9 +130,11 @@
         left: 0;
         margin-left: auto;
         margin-right: auto;
+        img{
+          transform: translateY(20px);
+        }
       }
     }
-
     &_icons{
       grid-template-columns: 1fr 1fr;
       &_frame{
@@ -143,13 +146,15 @@
     }
   }
   .amenities-footer{
+    padding-top: 0;
+    margin-top: 100px;
     &_right{
       position: relative;
       width: 100%;
       text-align: center;
       .imgA{
         position: relative;
-        top: -70px;
+        top: -26px;
         z-index: -2;
         max-width: 396px
       }
@@ -222,6 +227,15 @@
       }
     }
   }
+  .amenities-footer {
+    margin-top: 55px;
+  }
+  .amenities{
+    &_banner{
+      padding-top: 110px;
+      transform: translateY(115px);
+    }
+  }
 }
 
 @media (max-width: 425px){
@@ -237,5 +251,14 @@
         width: 70%;
       }
     }
+  }
+  .amenities{
+    &_banner{
+      padding-top: 85px;
+      transform: translateY(85px);
+    }
+  }
+  .amenities-footer {
+    margin-top: 25px;
   }
 }
