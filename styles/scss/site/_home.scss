@@ -528,26 +528,45 @@
 .landscape{
   &_banner{
     padding: 80px 0;
+    position: relative;
     &::after{
       content: "";
       position: absolute;
       background-image: url(../../assets/images/landscape/fondod.png);
       background-position: center;
-      background-size: cover;
+      background-size: 100% 100%;
       background-repeat: no-repeat;
       width: 45%;
       height: 100%;
       left: 0;
       top: 0;
-      z-index: -1;
     }
     p.h2 {
       margin-bottom: 15px;
     }
+    .col-left{
+      z-index: 1;
+    }
+  }
+  .boton-select{
+    opacity:0;
+    cursor: pointer;
+    &.active{
+      opacity:1;
+    }
+    &:not(.active):hover{
+      opacity: 1;
+      .st1{
+        stroke: $primary;
+        stroke-width: 5px;
+        fill: #0000;
+      }
+
+    }
   }
   &_img{
     position: absolute;
-    background-image: url(../../assets/images/landscape/landscape-day.jpg);
+    background-image: url(../../assets/images/landscape/lands/landscape-day.jpg);
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
@@ -555,20 +574,23 @@
     height: 100%;
     right: 0;
     top: 0;
-    z-index: -2;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: end;
-    padding-bottom: 40px;
-    a{
+    padding-bottom: 0;
+    p{
       color: $white;
-      text-decoration: none;
       font-weight: 500;
-      img{
-        width: 105px;
-        margin-left: 17px;
-      }
+    }
+    svg.banner_lands {
+        width: 100%;
+        max-width: 110px;
+        margin-left: 20px;
+    }
+    .d-flex.align-items-center {
+      position: absolute;
+      padding-bottom: 20px;
     }
   }
 }

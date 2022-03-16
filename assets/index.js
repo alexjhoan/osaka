@@ -14,6 +14,12 @@ $(window).on('load', function () {
     }
   })
 
+    // $(".boton-select").on("click touchstart" ,function () {
+
+    // $(this).addClass('active').siblings().removeClass("active")
+    // $('.landscape_img').attr('url',`assets/images/landscape/lands/${this.id}.jpg`)
+  // })
+
   $("header .nav-link").click(function (e) {
     e.preventDefault()
     $("header .collapse.show").removeClass("show")
@@ -114,8 +120,17 @@ const galleryTop = new Swiper('.gallery-top', {
   }
 });
 // ------------------------------Gallery-Advance-----------------------------
-if (screen.width < 768){
-$("#lightgallery").addClass('.swiper-wrapper');
+$("#lightgallery .swiper-wrapper").lightGallery();
+  const mygallery = new Swiper(".mySwiper", {
+        navigation: {
+          nextEl: ".swiper-button-next",
+          prevEl: ".swiper-button-prev",
+        }
+   });
+  if (screen.width < 768) {
+    $("#lightgallery .swiper-wrapper").add("mygallery")
+  } else {
+    $("#lightgallery .swiper-wrapper").removeClass("mygallery")
   }
 //---------------------------------Form-------------------------------
 function dataSubmited(data) {

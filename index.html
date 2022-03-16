@@ -339,16 +339,22 @@
     </div>
   </div>
   <section id="landscape" class="landscape">
-    <div class="landscape_img d-lg-none d-flex">
-      <a href="#"><img src="assets/images/landscape/boton.svg" alt="Osaka"></a>
-    </div>
+<!--     <div class="landscape_img d-lg-none d-flex">
+      <div class="d-flex align-items-center">
+        <p class="mb-0">VISTA:</p>
+        <img src="assets/images/landscape/boton.svg" onload="SVGInject(this)" alt="Osaka" class="banner_lands">
+      </div>
+    </div> -->
     <div class="landscape_banner">
-      <div class="landscape_img d-none d-lg-flex">
-        <a href="#">VISTA: <img src="assets/images/landscape/boton.svg" alt="Osaka"></a>
+      <div class="landscape_img d-flex">
+        <div class="d-flex align-items-center">
+          <p class="mb-0">VISTA:</p>
+          <img src="assets/images/landscape/boton.svg" onload="SVGInject(this)" alt="Osaka" class="banner_lands">
+        </div>
       </div>
       <div class="container ul">
         <div class="row">
-          <div class="col-lg-4 col-12">
+          <div class="col-lg-4 col-12 col-left">
             <p class="h2" style="font-weight: 300">EL ENTORNO<br><span class="h1" style="font-weight: 700">NATURAL</span></p>
             <p>El paisajismo es parte fundamental del concepto. El entorno se rodea de jardines y espacios verdes que expresan una personalidad oriental, y le dan un descanso agradable a la vista. Lo natural se ve integrado en la arquitectura con jardines verticales en las fachadas, árboles de ciruelos que decoran los frentes, y jardines privados en cada una de las propiedades.</p>
             <p>El paisajismo está a cargo de Flores y Plantas Musacco, una empresa uruguaya de larga trayectoria presente en el mercado desde 1939.</p>
@@ -509,23 +515,27 @@
     </div>
   </section>
   <section id="gallery">
-    <div id="lightgallery" class="wow slideInUp">
-      <a href="assets/images/advance/setiembre_2021_1.jpg">
-        <img src="assets/images/advance/setiembre_2021_1.jpg" />
-        <p class="mb-0">Febrero 2022</p>
-      </a>
-      <a href="assets/images/advance/setiembre_2021_2.jpg">
-        <img src="assets/images/advance/setiembre_2021_2.jpg" />
-        <p class="mb-0">Febrero 2022</p>
-      </a>
-      <a href="assets/images/advance/setiembre_2021_3.jpg">
-        <img src="assets/images/advance/setiembre_2021_3.jpg" />
-        <p class="mb-0">Febrero 2022</p>
-      </a>
-      <a href="assets/images/advance/setiembre_2021_4.jpg">
-        <img src="assets/images/advance/setiembre_2021_4.jpg" />
-        <p class="mb-0">Febrero 2022</p>
-      </a>
+    <div id="lightgallery" class="wow slideInUp swiper mySwiper">
+      <div class="swiper-wrapper">
+        <a href="assets/images/advance/setiembre_2021_1.jpg" class="swiper-slide">
+          <img src="assets/images/advance/setiembre_2021_1.jpg" />
+          <p class="mb-0">Febrero 2022</p>
+        </a>
+        <a href="assets/images/advance/setiembre_2021_2.jpg" class="swiper-slide">
+          <img src="assets/images/advance/setiembre_2021_2.jpg" />
+          <p class="mb-0">Febrero 2022</p>
+        </a>
+        <a href="assets/images/advance/setiembre_2021_3.jpg" class="swiper-slide">
+          <img src="assets/images/advance/setiembre_2021_3.jpg" />
+          <p class="mb-0">Febrero 2022</p>
+        </a>
+        <a href="assets/images/advance/setiembre_2021_4.jpg" class="swiper-slide">
+          <img src="assets/images/advance/setiembre_2021_4.jpg" />
+          <p class="mb-0">Febrero 2022</p>
+        </a>
+      </div>
+      <div class="swiper-button-next"></div>
+      <div class="swiper-button-prev"></div>
     </div>
   </section>
   <section id="project" class="project">
