@@ -114,7 +114,9 @@ const galleryTop = new Swiper('.gallery-top', {
   }
 });
 // ------------------------------Gallery-Advance-----------------------------
-$("#lightgallery .swiper-wrapper").lightGallery();
+if (screen.width < 768){
+$("#lightgallery").addClass('.swiper-wrapper');
+  }
 //---------------------------------Form-------------------------------
 function dataSubmited(data) {
   const requestOptions = {
