@@ -794,6 +794,9 @@
       transform: scale(1.07);
     }
   }
+  .swiper-pagination.d-block.d-md-none.swiper-pagination-bullets.swiper-pagination-horizontal {
+      bottom: 2px;
+  }
 }
 /*----------------------------Project-------------------------------*/
 .project{

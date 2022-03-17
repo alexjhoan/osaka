@@ -135,12 +135,13 @@ const galleryTop = new Swiper('.gallery-top', {
 // $("#lightgallery .swiper-wrapper").lightGallery();
 
   if (screen.width < 768) {
-    $("#lightgallery").addClass("swiper swiper-wrapper")
+    $("#gallery").addClass("swiper")
+    $("#lightgallery").addClass("swiper-wrapper")
+    $(".kids").addClass("swiper-slide")
       const mygallery = new Swiper(".swiper", {
-        navigation: {
-          nextEl: ".swiper-button-next",
-          prevEl: ".swiper-button-prev",
-        }
+        pagination: {
+          el: ".swiper-pagination",
+        },
       })
   }
 //---------------------------------Form-------------------------------
