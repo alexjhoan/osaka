@@ -42,8 +42,10 @@
   <section id="descriptions" class="descriptions">
     <div class="container">
       <div class="row">
-        <div class="descriptions_banner">
-        <div class="col-xl-6 col-12 descriptions_right">
+        <div class="d-none d-xl-block col-xl-5 descriptions_image wow fadeInLeft">
+          <img src="assets/images/descriptions/foto.png" alt="Osaka" class="imgleft">
+        </div>
+        <div class="col-xl-7 col-12 descriptions_right">
           <div class="descriptions_text">
             <img src="assets/icons/logo-osaka.svg" alt="Osaka" class="logo">
             <p>Osaka es un proyecto inspirado en la delicadeza y armonía de un jardín japonés. Una urbanización cerrada de solo 14 casas tipo dúplex, que ofrece el balance perfecto entre eficiencia y bienestar.</p>
@@ -86,7 +88,7 @@
           </div>
         </div>
 
-        </div>
+
       </div>
     </div>
   </section>
@@ -181,17 +183,18 @@
   </section>
   <section id="units" class="units">
     <div class="container">
+
       <div class="row">
         <div class="col-12 wow fadeInDown">
-          <p class="h3">TIPOLOGÍA 1<br><span style="font-weight: 700">3 DORMITORIOS</span></p>
+          <p class="h3">TIPOLOGÍAS<br><span class="h2" style="font-weight: 700">2 DORMITORIOS</span></p>
         </div>
         <div class="col-lg-6 col-12 col-img wow fadeInLeft">
-          <img src="assets/images/units/typology1/tipologia1.svg" onload="SVGInject(this)" alt="Osaka" class="project">
+          <img src="assets/images/units/typology2/tipologia2.svg" onload="SVGInject(this)" alt="Osaka" class="project">
         </div>
         <div class="col-lg-6 col-12 col-img wow fadeInRight">
           <p id="nameLevel"><span>Planta Baja</span><img src="assets/images/units/brujula.svg" alt="brujula"></p>
-          <a class="edfLevelUrl" href="assets/images/units/typology1/plantas/tipo1PB.png">
-            <img src="assets/images/units/typology1/plantas/tipo1PB.png" alt="zoom" class="edfImgLevel">
+          <a class="edfLevelUrl" href="assets/images/units/typology2/plantas/tipo2PB.png">
+            <img src="assets/images/units/typology2/plantas/tipo2PB.png" alt="zoom" class="edfImgLevel">
           </a>
           <div class="units_download">
             <div>
@@ -202,7 +205,7 @@
                 <img src="assets/images/units/descarga.svg" alt="download" class="down">
                   Descargar planos
               </a>
-              <a class="edfLevelUrl" href="assets/images/units/typology1/plantas/tipo1PB.png" >
+              <a class="edfLevelUrl" href="assets/images/units/typology2/plantas/tipo2PB.png" >
                 <img src="assets/images/units/lupa.svg" alt="zoom" class="zoom">
               </a>
             </div>
@@ -213,40 +216,10 @@
 
       <div class="row">
         <div class="col-12 wow fadeInDown">
-          <p class="h3">TIPOLOGÍA 2<br><span style="font-weight: 700">3 DORMITORIOS</span></p>
+          <p class="h3">TIPOLOGÍAS<br><span class="h2" style="font-weight: 700">3 DORMITORIOS</span></p>
         </div>
         <div class="col-lg-6 col-12 col-img wow fadeInLeft">
-          <img src="assets/images/units/typology2/tipologia2.svg" alt="Osaka" class="project">
-        </div>
-        <div class="col-lg-6 col-12 col-img wow fadeInRight">
-          <p id="nameLevel"><span>Planta Baja</span><img src="assets/images/units/brujula.svg" alt="brujula"></p>
-          <a class="edfLevelUrl" href="assets/images/units/typology2/tipo2PB.png">
-            <img src="assets/images/units/typology2/tipo2PB.png" alt="zoom" class="edfImgLevel">
-          </a>
-          <div class="units_download">
-            <div>
-              <button id="myBtn" class="units_measures" data-bs-toggle="modal" data-bs-target="#myModalB"><img src="assets/images/units/medidas.svg" class="measures">Ver medidas</button>
-            </div>
-            <div class="units_download_b">
-              <a href="assets/tipologias-osaka.pdf" target="_blank">
-                <img src="assets/images/units/descarga.svg" alt="download" class="down">
-                  Descargar planos
-              </a>
-              <a class="edfLevelUrl" href="assets/images/units/typology2/tipo2PB.png" >
-                <img src="assets/images/units/lupa.svg" alt="zoom" class="zoom">
-              </a>
-            </div>
-          </div>
-        </div>
-        <div class="units_progress"></div>
-      </div>
-
-      <div class="row">
-        <div class="col-12 wow fadeInDown">
-          <p class="h3">TIPOLOGÍA 3<br><span style="font-weight: 700">3 DORMITORIOS</span></p>
-        </div>
-        <div class="col-lg-6 col-12 col-img wow fadeInLeft">
-          <img src="assets/images/units/typology3/tipologia3.svg" alt="Osaka" class="project">
+          <img src="assets/images/units/typology3/tipologia1.svg" alt="Osaka" class="project">
         </div>
         <div class="col-lg-6 col-12 col-img wow fadeInRight">
           <p id="nameLevel"><span>Planta Baja</span><img src="assets/images/units/brujula.svg" alt="brujula"></p>
@@ -255,7 +228,7 @@
           </a>
           <div class="units_download">
             <div>
-              <button id="myBtn" class="units_measures" data-bs-toggle="modal" data-bs-target="#myModalC"><img src="assets/images/units/medidas.svg" class="measures">Ver medidas</button>
+              <button id="myBtn" class="units_measures" data-bs-toggle="modal" data-bs-target="#myModalB"><img src="assets/images/units/medidas.svg" class="measures">Ver medidas</button>
             </div>
             <div class="units_download_b">
               <a href="assets/tipologias-osaka.pdf" target="_blank">
@@ -271,70 +244,100 @@
       </div>
     </div>
   </section>
-   <div id="myModalA" class="modal ">
+  <div id="myModalA" class="modal">
     <div class="modal-dialog modal-xl modal-dialog-centered">
       <!-- Modal content -->
       <div class="modal-content">
         <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
         <div class="modal-body">
-          <div class="col-left">
-            <p class="h3" style="font-weight: 700">UNIDAD 2<br><span class="h5" style="font-weight: 400">3 DORMITORIOS</span> </p>
-            <p class="mt-4 line">313,5 m² totales APPCU</p>
-            <p class="line">106 m² interiores</p>
-            <p class="line">Jardín y Deck: 90 m²</p>
-            <p class="line">Cochera: 11,5 m²</p>
-            <p class="mt-3">Según criterio APPCU (Asociación de Promotores privados de la Construcción en Uruguay) considera área individual más la cuotaparte de muros y ductos.</p>
-          </div>
-          <div class="col-right">
-            <img src="assets/images/units/typology1/tipo1.png" alt="Torre Munich" class="img-right">
-            <img src="assets/images/units/brujula.svg" alt="brujula" class="compass">
+          <div class="swiper swiper-popupa">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <div class="col-left">
+                  <p class="h5" style="font-weight: 300">2 DORMITORIOS<br><span class="h4" style="font-weight: 700">UNIDADES: 3, 7, Y 11</span></p>
+                  <p class="line">109,14 m² totales APPCU</p>
+                  <p class="line">86,50 m² interiores</p>
+                  <p class="line">Jardín y Deck: 22,64 m²</p>
+                  <p class="line">Cochera: 11,5 m²</p>
+                  <p class="line">Orientación: Norte</p>
+                  <p class="mt-3">Según criterio APPCU (Asociación de Promotores privados de la Construcción en Uruguay) considera área individual más la cuotaparte de muros y ductos.</p>
+                </div>
+                <div class="col-right">
+                  <img src="assets/images/units/typology2/unidades-3-7-11.png" alt="Torre Munich" class="img-right">
+                  <img src="assets/images/units/brujula.svg" alt="brujula" class="compass">
+                </div>
+              </div>
+
+              <div class="swiper-slide">
+                <div class="col-left">
+                  <p class="h5" style="font-weight: 300">2 DORMITORIOS<br><span class="h4" style="font-weight: 700">UNIDADES: 10 Y 12</span></p>
+                  <p class="line">109,14 m² totales APPCU</p>
+                  <p class="line">86,50 m² interiores</p>
+                  <p class="line">Jardín y Deck: 22,64 m²</p>
+                  <p class="line">Cochera: 11,5 m²</p>
+                  <p class="line">Orientación: Sur</p>
+                  <p class="mt-3">Según criterio APPCU (Asociación de Promotores privados de la Construcción en Uruguay) considera área individual más la cuotaparte de muros y ductos.</p>
+                </div>
+                <div class="col-right">
+                  <img src="assets/images/units/typology2/unidades-10-12.png" alt="Torre Munich" class="img-right">
+                  <img src="assets/images/units/brujula.svg" alt="brujula" class="compass">
+                </div>
+              </div>
+
+            </div>
           </div>
         </div>
-      </div>
-    </div>
-  </div>
-  <div id="myModalB" class="modal">
-    <div class="modal-dialog modal-xl modal-dialog-centered">
-      <!-- Modal content -->
-      <div class="modal-content">
-        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-        <div class="modal-body">
-          <div class="col-left">
-            <p class="h3" style="font-weight: 700">UNIDADES 3, 7, 10, 11, 12<br><span class="h5" style="font-weight: 400">2 DORMITORIOS</span></p>
-            <p class="mt-4 line">109,14 m² totales APPCU</p>
-            <p class="line">86,50 m² interiores</p>
-            <p class="line">Jardín y Deck: 22,64 m²</p>
-            <p class="line">Cochera: 11,5 m²</p>
-            <p class="mt-3">Según criterio APPCU (Asociación de Promotores privados de la Construcción en Uruguay) considera área individual más la cuotaparte de muros y ductos.</p>
-          </div>
-          <div class="col-right">
-            <img src="assets/images/units/typology2/tipo2.png" alt="Torre Munich" class="img-right">
-            <img src="assets/images/units/brujula.svg" alt="brujula" class="compass">
-          </div>
-        </div>
+          <div class="swiper-button-next swiper-button-white"></div>
+          <div class="swiper-button-prev swiper-button-white"></div>
+
       </div>
     </div>
   </div>
 
-  <div id="myModalC" class="modal ">
+  <div id="myModalB" class="modal ">
     <div class="modal-dialog modal-xl modal-dialog-centered">
       <!-- Modal content -->
       <div class="modal-content">
         <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
         <div class="modal-body">
-          <div class="col-left">
-            <p class="h3" style="font-weight: 700">UNIDADES 13, 14<br><span class="h5" style="font-weight: 400">3 DORMITORIOS</span> </p>
-            <p class="mt-4 line">137 m² totales APPCU</p>
-            <p class="line">106 m² interiores</p>
-            <p class="line">Jardín y Deck: 31,64 m²</p>
-            <p class="line">Cochera: 11,5 m²</p>
-            <p class="mt-3">Según criterio APPCU (Asociación de Promotores privados de la Construcción en Uruguay) considera área individual más la cuotaparte de muros y ductos.</p>
-          </div>
-          <div class="col-right">
-            <img src="assets/images/units/typology1/tipo1.png" alt="Torre Munich" class="img-right">
-            <img src="assets/images/units/brujula.svg" alt="brujula" class="compass">
+          <div class="swiper swiper-popupb">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <div class="col-left">
+                  <p class="h5" style="font-weight: 300">3 DORMITORIOS<br><span class="h4" style="font-weight: 700">UNIDADES: 2 Y 13</span></p>
+                  <p class="line">137 m² totales APPCU</p>
+                  <p class="line">106 m² interiores</p>
+                  <p class="line">Jardín y Deck: 31,64 m²</p>
+                  <p class="line">Cochera: 11,5 m²</p>
+                  <p class="line">Orientación: U2 Sur / U13 Norte</p>
+                  <p class="mt-3">Según criterio APPCU (Asociación de Promotores privados de la Construcción en Uruguay) considera área individual más la cuotaparte de muros y ductos.</p>
+                </div>
+                <div class="col-right">
+                  <img src="assets/images/units/typology3/unidades-2-13.png" alt="Torre Munich" class="img-right">
+                  <img src="assets/images/units/brujula.svg" alt="brujula" class="compass">
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="col-left">
+                  <p class="h5" style="font-weight: 300">3 DORMITORIOS<br><span class="h4" style="font-weight: 700">UNIDADES: 14</span></p>
+                  <p class="line">137 m² totales APPCU</p>
+                  <p class="line">106 m² interiores</p>
+                  <p class="line">Jardín y Deck: 31,64 m²</p>
+                  <p class="line">Cochera: 11,5 m²</p>
+                  <p class="line">Orientación: Sur</p>
+                  <p class="mt-3">Según criterio APPCU (Asociación de Promotores privados de la Construcción en Uruguay) considera área individual más la cuotaparte de muros y ductos.</p>
+                </div>
+                <div class="col-right">
+                  <img src="assets/images/units/typology3/unidad-14.png" alt="Torre Munich" class="img-right">
+                  <img src="assets/images/units/brujula.svg" alt="brujula" class="compass">
+                </div>
+              </div>
+            </div>
           </div>
         </div>
+          <div class="swiper-button-next swiper-button-white"></div>
+          <div class="swiper-button-prev swiper-button-white"></div>
+
       </div>
     </div>
   </div>
@@ -517,8 +520,8 @@
     </div>
   </section>
   <section id="gallery">
-    <div id="lightgallery" class="wow slideInUp swiper mySwiper">
-      <div class="swiper-wrapper">
+    <div id="lightgallery" class="wow slideInUp">
+<!--       <div class="swiper-wrapper"> -->
         <a href="assets/images/advance/setiembre_2021_1.jpg" class="swiper-slide">
           <img src="assets/images/advance/setiembre_2021_1.jpg" />
           <p class="mb-0">Febrero 2022</p>
@@ -535,7 +538,7 @@
           <img src="assets/images/advance/setiembre_2021_4.jpg" />
           <p class="mb-0">Febrero 2022</p>
         </a>
-      </div>
+<!--       </div> -->
       <div class="swiper-button-next"></div>
       <div class="swiper-button-prev"></div>
     </div>

@@ -1,9 +1,9 @@
 @media (min-width: 1400px) {
-  .descriptions{
-    &_banner{
-      height: 90vh;
-    }
-  }
+//   .descriptions{
+//     &_banner{
+//       height: 90vh;
+//     }
+//   }
 }
 @media (max-width: 1399.98px) {
   #unitsGallery {
@@ -216,29 +216,52 @@
   }
   .modal{
     .modal-content{
-      padding: 20px 40px;
+      padding: 20px;
       border-radius: 30px;
       .btn-close{
         top: 30px;
         right: 30px;
       }
       .modal-body{
-        grid-template-columns: auto;
-        row-gap: 20px;
-        .col-left{
-          p.line{
-            font-size: 0.875rem;
-            padding: 5px 0;
-            margin-bottom: 0;
+        .swiper-slide{
+          grid-template-columns: auto;
+          row-gap: 20px;
+          .col-left{
+            p.h5{
+              font-size: 1.25rem;
+              margin-bottom: 7px;
+              span.h4{
+                font-size: 1rem;
+              }
+            }
+            p.line{
+              font-size: 0.875rem;
+              padding: 5px 0;
+              margin-bottom: 0;
+            }
+          }
+          .col-right{
+            column-gap: 5px;
+            justify-content: center;
+            .compass {
+              margin-top: 0;
+            }
+            .img-right {
+              max-width: 200px;
+            }
           }
         }
-        .col-right{
-          column-gap: 20px;
-          justify-content: center;
-          .compass {
-            margin-top: 0;
-          }
+      }
+      .swiper-button-white{
+        &::after{
+          font-size: 20px;
         }
+      }
+      .swiper-button-prev{
+        left: 10px;
+      }
+      .swiper-button-next {
+        right: 10px;
       }
     }
   }

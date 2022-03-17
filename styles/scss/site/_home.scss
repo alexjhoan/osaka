@@ -25,31 +25,38 @@
 }
 /*----------------------------Description-------------------------------*/
 .descriptions{
+  padding: 11% 10% 6% 14%;
   background-image: url(../../assets/images/descriptions/fondo.png);
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  &_banner{
-    background-image: url(../../assets/images/descriptions/fotob.png);
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
+  &_image{
+    position: relative;
+    z-index: 2;
   }
   &_right{
-    margin-left: auto;
-    padding-top: 40px;
-    padding-bottom: 40px;
-    padding-right: 50px;
-    padding-left: 40px;
+    position: relative;
+    z-index: 1;
+    padding: 30px 25px;
+    &::before{
+      content: "";
+      position: absolute;
+      height: 100%;
+      background: #fff;
+      z-index: 1;
+      width: 155%;
+      left: -50%;
+      top: 0;
+    }
     img.logo{
       max-width: 150px;
       width: 100%;
       margin-bottom: 18px;
     }
+  }
+  &_text{
+    position: relative;
+    z-index: 2;
   }
   &_table{
     display: flex;
@@ -396,11 +403,10 @@
     }
     &:not(.active):hover{
       opacity: 1;
-
-      .st0{
-        stroke: $lightpink;
+      .st1{
+        stroke: $primary;
         stroke-width: 5px;
-        fill: #0000;
+        fill: $lightpink;
       }
 
     }
@@ -434,7 +440,6 @@
       justify-content: space-between;
     }
     .measures{
-
       width: 15px;
       margin-right: 10px;
     }
@@ -486,42 +491,57 @@
         box-shadow: none;
     }
     .modal-body{
-      display: grid;
-      grid-template-columns: 35% auto;
-      column-gap: 35px;
-      .col-left{
-        p.h3, span.h5{
-          color: $primary;
-          line-height: 1;
+      .swiper-slide{
+        display: grid;
+        grid-template-columns: 35% auto;
+        column-gap: 35px;
+        .col-left{
+          p.h5, span.h4{
+            margin-bottom: 13px;
+            color: $primary;
+            line-height: 1;
+          }
+          p.line{
+            border-bottom: 1px solid #cecece;
+            width: 100%;
+            padding: 10px 0;
+            margin-bottom: 0;
+          }
+          p.mt-3{
+            font-size: 0.875rem;
+          }
         }
-        p.line{
-          border-bottom: 1px solid #cecece;
-          width: 100%;
-          padding: 10px 0;
-          margin-bottom: 0;
-        }
-        p.mt-3{
-          font-size: 0.875rem;
+        .col-right{
+          display: flex;
+          flex-direction: row;
+          align-items: flex-start;
+          justify-content: flex-end;
+          column-gap: 70px;
+          .img-right {
+            width: 100%;
+            max-width: 350px;
+          }
+          .compass {
+            width: 22px;
+            height: auto;
+            margin-top: 30px;
+          }
         }
       }
-      .col-right{
-        display: flex;
-        flex-direction: row;
-        align-items: flex-start;
-        justify-content: flex-end;
-        column-gap: 70px;
-        .img-right {
-          width: 100%;
-          max-width: 350px;
+    }
+    .swiper-button-white{
+        &::after{
+          font-size: 40px;
+          color: #494846;
         }
-        .compass {
-          width: 22px;
-          height: auto;
-          margin-top: 30px;
-        }
+      }
+      .swiper-button-prev{
+        left: 30px;
+      }
+      .swiper-button-next {
+        right: 30px;
       }
 
-    }
   }
 }
 /*----------------------------Lanscape-Paisajismo-----------------------------------*/

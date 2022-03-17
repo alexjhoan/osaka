@@ -7,11 +7,11 @@ $(window).on('load', function () {
     $(this).addClass('active').siblings().removeClass("active")
     $('.edfImgLevel').attr('src',`assets/images/units/plantas/${this.id}.png`)
     $(".edfLevelUrl").attr('href',`assets/images/units/plantas/${this.id}.png`)
-    if (this.id == "planta_baja") {
-      $("#nameLevel span").text("Planta Baja")
-    } else {
-      $("#nameLevel span").text("Planta Alta")
-    }
+    // if (this.id == "planta_baja") {
+    //   $("#nameLevel span").text("Planta Baja")
+    // } else {
+    //   $("#nameLevel span").text("Planta Alta")
+    // }
   })
 
     // $(".boton-select").on("click touchstart" ,function () {
@@ -96,9 +96,21 @@ $('#myModalA').on('shown.bs.modal', function () {
 $('#myModalB').on('shown.bs.modal', function () {
   $('#myInput').trigger('focus')
 })
-$('#myModalC').on('shown.bs.modal', function () {
-  $('#myInput').trigger('focus')
-})
+// ----------Swipper Modal-----------------
+const swiperpopupa = new Swiper('.swiper-popupa', {
+  loop: true,
+  navigation: {
+    nextEl: '.swiper-button-next',
+    prevEl: '.swiper-button-prev',
+  },
+});
+const swiperpopupb = new Swiper('.swiper-popupb', {
+  loop: true,
+  navigation: {
+    nextEl: '.swiper-button-next',
+    prevEl: '.swiper-button-prev',
+  },
+});
 // ------------------------------Units Gallery-----------------------------
 const galleryThumbs = new Swiper('.gallery-thumbs', {
   spaceBetween: 20,
@@ -120,17 +132,16 @@ const galleryTop = new Swiper('.gallery-top', {
   }
 });
 // ------------------------------Gallery-Advance-----------------------------
-$("#lightgallery .swiper-wrapper").lightGallery();
-  const mygallery = new Swiper(".mySwiper", {
+// $("#lightgallery .swiper-wrapper").lightGallery();
+
+  if (screen.width < 768) {
+    $("#lightgallery").addClass("swiper swiper-wrapper")
+      const mygallery = new Swiper(".swiper", {
         navigation: {
           nextEl: ".swiper-button-next",
           prevEl: ".swiper-button-prev",
         }
-   });
-  if (screen.width < 768) {
-    $("#lightgallery .swiper-wrapper").add("mygallery")
-  } else {
-    $("#lightgallery .swiper-wrapper").removeClass("mygallery")
+      })
   }
 //---------------------------------Form-------------------------------
 function dataSubmited(data) {
