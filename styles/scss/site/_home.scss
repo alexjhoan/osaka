@@ -420,11 +420,15 @@
     }
     &:not(.active):hover{
       opacity: 1;
-      .cls-9{
+      .cls-6{
+        fill: $lightpink;
         stroke: $primary ;
         stroke-width: 5px;
-        fill: $lightpink;
       }
+      // .cls-7{
+      //   stroke: $primary ;
+      //   stroke-width: 5px;
+      // }
 
     }
   }
@@ -436,11 +440,15 @@
     }
     &:not(.active):hover{
       opacity: 1;
-      .cls-9{
+      .cls-6{
+        fill: $lightpink;
         stroke: $primary ;
         stroke-width: 5px;
-        fill: $lightpink;
       }
+      // .cls-7{
+      //   stroke: $primary ;
+      //   stroke-width: 5px;
+      // }
 
     }
   }
@@ -624,12 +632,10 @@
       object-fit: cover;
       z-index: 1;
     }
-    .day{
-      display: block;
+    img.day{
       opacity: 1;
     }
-    .night{
-      display: block;
+    img.night{
       opacity: 0;
     }
     .boton-time {
@@ -642,12 +648,40 @@
       p{
         color: $white;
         font-weight: 500;
+        margin-right: 20px;
       }
-      img.banner_lands {
-        width: 100%;
-        max-width: 110px;
-        margin-left: 20px;
+      .bsol{
+        border-top-left-radius: 30px;
+        border-bottom-left-radius: 30px;
+        padding-right: 20px;
       }
+      .bluna{
+        border-top-right-radius: 30px;
+        border-bottom-right-radius: 30px;
+        padding-left: 20px;
+      }
+
+      button{
+        background-color: $white;
+        padding: 10px 25px;
+        border-style: none;
+        .img-boton {
+          width: 100%;
+          max-width: 30px;
+          path {
+            fill: #8A5874;
+          }
+        }
+        &.active{
+          background-color: #976480;
+          .img-boton {
+            path {
+              fill: #fff;
+            }
+          }
+        }
+      }
+
     }
   }
 }
@@ -727,25 +761,12 @@
   padding-bottom: 0;
   padding-top: 20px;
   &_right{
-    position: relative;
-    width: 50%;
-    margin-left: auto;
+    position: absolute;
+    right: 0;
+    bottom: -64px;
+    z-index: -1;
     .imgA{
-      position: absolute;
-      left: 0px;
-      right: 0px;
-      margin-right: auto;
-      margin-left: auto;
-      bottom: -275px;
-      max-width: 530px;
-      width: 100%;
-      z-index: -1;
-    }
-    .imgB{
-      position: absolute;
-      right: 0;
-      top: 0;
-      max-width: 245px;
+      max-width: 700px;
       width: 100%;
     }
   }

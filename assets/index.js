@@ -19,9 +19,11 @@ $(window).on('load', function () {
     $("#nameLevel3 span").text(nameLevel)
   })
 
-    $(".boton-select").on("click touchstart", function () {
-    $(this).addClass('active').siblings().removeClass("active")
-    $('.day-night').attr('url',`assets/images/landscape/lands/landscape-night.jpg`)
+    $(".prueba").click( function(){
+      $(this).addClass('active').siblings().removeClass('active')
+      const nameclase = $(this).attr("class")
+      console.log(nameclase);
+      $(".img-time").fadeToggle();
   })
 
   $("header .nav-link").click(function (e) {
