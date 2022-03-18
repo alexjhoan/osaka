@@ -401,6 +401,17 @@
       height: auto;
     }
   }
+  #nameLevel3{
+    color: $primary;
+    font-weight: 500;
+    display: flex;
+    justify-content: space-between;
+    align-content: center;
+    img{
+      width: 22px;
+      height: auto;
+    }
+  }
   .edf-select{
     opacity:0;
     cursor: pointer;
@@ -409,8 +420,24 @@
     }
     &:not(.active):hover{
       opacity: 1;
-      .st1{
-        stroke: $primary;
+      .cls-9{
+        stroke: $primary ;
+        stroke-width: 5px;
+        fill: $lightpink;
+      }
+
+    }
+  }
+  .edf-select3{
+    opacity:0;
+    cursor: pointer;
+    &.active{
+      opacity:1;
+    }
+    &:not(.active):hover{
+      opacity: 1;
+      .cls-9{
+        stroke: $primary ;
         stroke-width: 5px;
         fill: $lightpink;
       }
@@ -428,9 +455,9 @@
       margin-right: auto;
     }
   }
-  .edfLevelUrl {
+  .edfLevelUrl, .edfLevelUrl3{
     text-align: center;
-    .edfImgLevel{
+    .edfImgLevel, .edfImgLevel3{
       max-width: 350px;
       width: 100%;
     }
@@ -578,22 +605,7 @@
       z-index: 2;
     }
   }
-  .boton-select{
-    opacity:0;
-    cursor: pointer;
-    &.active{
-      opacity:1;
-    }
-    &:not(.active):hover{
-      opacity: 1;
-      .st1{
-        stroke: $primary;
-        stroke-width: 5px;
-        fill: #0000;
-      }
 
-    }
-  }
   &_img{
     position: absolute;
     padding: 0;
@@ -605,7 +617,8 @@
     align-items: center;
     justify-content: flex-end;
 
-    img{
+    .img-time{
+      position: absolute;
       height: 100%;
       width: 100%;
       object-fit: cover;
@@ -613,19 +626,24 @@
     }
     .day{
       display: block;
+      opacity: 1;
     }
     .night{
-      display: none;
+      display: block;
+      opacity: 0;
     }
-    .d-flex.align-items-center {
-      position: absolute;
+    .boton-time {
+      // position: absolute;
       padding-bottom: 20px;
+      margin-left: 10px;
       z-index: 2;
+      display: flex;
+      align-items: center;
       p{
         color: $white;
         font-weight: 500;
       }
-      svg.banner_lands {
+      img.banner_lands {
         width: 100%;
         max-width: 110px;
         margin-left: 20px;

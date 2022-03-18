@@ -5,8 +5,18 @@ $(window).on('load', function () {
     const nameLevel = this.id.replaceAll('_',' ')
     const capitalize = nameLevel.slice(0,1).toUpperCase() + nameLevel.slice(1)
     $(this).addClass('active').siblings().removeClass("active")
-    $('.edfImgLevel').attr('src',`assets/images/units/plantas/${this.id}.png`)
-    $(".edfLevelUrl").attr('href',`assets/images/units/plantas/${this.id}.png`)
+    $('.edfImgLevel').attr('src',`assets/images/units/typology2/plantas/${this.id}.png`)
+    $(".edfLevelUrl").attr('href',`assets/images/units/typology2/plantas/${this.id}.png`)
+    $("#nameLevel span").text(nameLevel)
+  })
+
+    $(".edf-select3").on("click touchstart" ,function () {
+    const nameLevel = this.id.replaceAll('_',' ')
+    const capitalize = nameLevel.slice(0,1).toUpperCase() + nameLevel.slice(1)
+    $(this).addClass('active').siblings().removeClass("active")
+    $('.edfImgLevel3').attr('src',`assets/images/units/typology3/plantas/${this.id}.png`)
+    $(".edfLevelUrl3").attr('href',`assets/images/units/typology3/plantas/${this.id}.png`)
+    $("#nameLevel3 span").text(nameLevel)
   })
 
     $(".boton-select").on("click touchstart", function () {
