@@ -7,18 +7,12 @@ $(window).on('load', function () {
     $(this).addClass('active').siblings().removeClass("active")
     $('.edfImgLevel').attr('src',`assets/images/units/plantas/${this.id}.png`)
     $(".edfLevelUrl").attr('href',`assets/images/units/plantas/${this.id}.png`)
-    // if (this.id == "planta_baja") {
-    //   $("#nameLevel span").text("Planta Baja")
-    // } else {
-    //   $("#nameLevel span").text("Planta Alta")
-    // }
   })
 
-    // $(".boton-select").on("click touchstart" ,function () {
-
-    // $(this).addClass('active').siblings().removeClass("active")
-    // $('.landscape_img').attr('url',`assets/images/landscape/lands/${this.id}.jpg`)
-  // })
+    $(".boton-select").on("click touchstart", function () {
+    $(this).addClass('active').siblings().removeClass("active")
+    $('.day-night').attr('url',`assets/images/landscape/lands/landscape-night.jpg`)
+  })
 
   $("header .nav-link").click(function (e) {
     e.preventDefault()
@@ -132,8 +126,6 @@ const galleryTop = new Swiper('.gallery-top', {
   }
 });
 // ------------------------------Gallery-Advance-----------------------------
-// $("#lightgallery .swiper-wrapper").lightGallery();
-
   if (screen.width < 768) {
     $("#gallery").addClass("swiper")
     $("#lightgallery").addClass("swiper-wrapper")
