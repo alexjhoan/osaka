@@ -421,14 +421,11 @@
     &:not(.active):hover{
       opacity: 1;
       .cls-6{
-        fill: $lightpink;
+        fill: transparent;
         stroke: $primary ;
         stroke-width: 5px;
       }
-      // .cls-7{
-      //   stroke: $primary ;
-      //   stroke-width: 5px;
-      // }
+
 
     }
   }
@@ -632,14 +629,7 @@
       object-fit: cover;
       z-index: 1;
     }
-    img.day{
-      opacity: 1;
-    }
-    img.night{
-      opacity: 0;
-    }
     .boton-time {
-      // position: absolute;
       padding-bottom: 20px;
       margin-left: 10px;
       z-index: 2;
@@ -660,7 +650,6 @@
         border-bottom-right-radius: 30px;
         padding-left: 20px;
       }
-
       button{
         background-color: $white;
         padding: 10px 25px;
@@ -674,6 +663,7 @@
         }
         &.active{
           background-color: #976480;
+          pointer-events: none;
           .img-boton {
             path {
               fill: #fff;

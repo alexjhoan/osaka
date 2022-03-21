@@ -22,8 +22,14 @@ $(window).on('load', function () {
     $(".prueba").click( function(){
       $(this).addClass('active').siblings().removeClass('active')
       const nameclase = $(this).attr("class")
-      console.log(nameclase);
-      $(".img-time").fadeToggle();
+      if (nameclase=="bsol prueba active") {
+        $('.day').fadeTo(300,1)
+        $('.night').fadeTo(300,0)
+      } else{
+        $('.night').fadeTo(300,1)
+        $('.day').fadeTo(300,0)
+      }
+
   })
 
   $("header .nav-link").click(function (e) {
