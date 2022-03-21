@@ -103,7 +103,7 @@
     top: 0;
     right: 0;
   }
-  p.h3{
+  h2.h3{
     margin-bottom: 20px;
   }
     &_item{
@@ -314,7 +314,7 @@
 .units-design{
   background-color: $secondary;
   text-align: center;
-  p.h2 {
+  .h2 {
     margin-bottom: 20px;
     font-weight: 600;
   }
@@ -593,7 +593,7 @@
       top: 0;
       z-index: 1;
     }
-    p.h2 {
+    h2 {
       margin-bottom: 15px;
       line-height: 0.6;
     }
@@ -756,7 +756,7 @@
   background-color: #F7F7F7;
   margin-top: 60px;
   padding-bottom: 45px;
-  p.h1.text-center {
+  .h1.text-center {
     margin-bottom: 40px;
   }
   &_line{
@@ -836,7 +836,7 @@
 /*----------------------------Project-------------------------------*/
 .project{
   text-align: center;
-  p.text-center.w-75 {
+  .text-center.w-75 {
     margin-left: auto;
     margin-right: auto;
   }
@@ -872,7 +872,7 @@
 .contact {
   background-color: $lightpink;
   padding: 80px 0;
-    p.h3{
+    .h3{
       margin-bottom: 22px;
     }
     form#contactForm {
