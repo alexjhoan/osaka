@@ -1,3 +1,8 @@
+@media(min-width: 1400px){
+  .landscape_img .img-time {
+    height: 99.8%;
+  }
+}
 @media (max-width: 1399.98px) {
   #unitsGallery {
     width: 55%;
@@ -112,8 +117,19 @@
   #unitsGallery {
     width: 100%;
   }
+  .amenities-footer {
+    margin-top: -42px;
+  }
+  .amenities-footer{
+    &_right {
+      bottom: -6px;
+      .imgA{
+        max-width: 550px;
+      }
+    }
+  }
   .advance {
-    margin-top: 14px;
+    margin-top: 7px;
   }
 }
 @media (max-width: 991.98px) {
@@ -273,6 +289,25 @@
     .land_row.row {
       flex-direction: column-reverse;
     }
+    &_img{
+      .boton-time{
+        p{
+          display: none;
+        }
+        .bsol{
+          padding-right: 10px;
+        }
+        .bluna{
+          padding-left: 10px;
+        }
+        button{
+          padding: 6px 15px;
+          .img-boton {
+            max-width: 16px;
+            }
+        }
+      }
+    }
     &_banner{
       background-image: url(../../assets/images/landscape/fondom.png);
       background-position: top;
@@ -311,6 +346,7 @@
   }
   .amenities{
     margin-top: 0;
+    z-index: 0;
     &_banner{
       background-image: url(../../assets/images/amenities/fondom.png);
       padding-top: 150px;
@@ -343,18 +379,16 @@
     &_right{
       position: relative;
       width: 100%;
-      text-align: center;
+      text-align: right;
       .imgA{
         position: relative;
         top: -26px;
         z-index: -2;
-        max-width: 396px
+        max-width: 500px;
       }
-      .imgB{
-        top: auto;
-        bottom: 40px;
-        max-width: 185px;
-      }
+    }
+    p.h3.mb-3 {
+      margin-top: 27px;
     }
   }
   .advance{
@@ -405,6 +439,11 @@
       }
     }
   }
+  .amenities-footer{
+    p.h3.mb-3 {
+      margin-top: 20px;
+    }
+  }
   .advance{
     &_line img{
       width: 85%;
@@ -436,10 +475,14 @@
     }
   }
   .amenities-footer{
-    &_right{
-      .imgA{
-        top: -40px;
+    &_right {
+      bottom: 6px;
+      .imgA {
+        max-width: 430px;
       }
+    }
+    p.h3.mb-3 {
+      margin-top: 0px;
     }
   }
   .landscape{
@@ -552,7 +595,12 @@
     }
   }
   .amenities-footer{
-    margin-top: 45px;
+    margin-top: 40px;
+    &_right {
+      .imgA {
+        max-width: 350px;
+      }
+    }
   }
   .advance{
     &_line img{

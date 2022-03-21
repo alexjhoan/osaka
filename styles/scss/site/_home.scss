@@ -78,7 +78,7 @@
     display: flex;
     flex-direction: row;
     align-items: center;
-    column-gap: 60px;
+    column-gap: 65px;
     margin-top: 24px;
     .text {
       display: flex;
@@ -425,8 +425,6 @@
         stroke: $primary ;
         stroke-width: 5px;
       }
-
-
     }
   }
   .edf-select3{
@@ -438,15 +436,10 @@
     &:not(.active):hover{
       opacity: 1;
       .cls-6{
-        fill: $lightpink;
+        fill: transparent;
         stroke: $primary ;
         stroke-width: 5px;
       }
-      // .cls-7{
-      //   stroke: $primary ;
-      //   stroke-width: 5px;
-      // }
-
     }
   }
   .col-img {
@@ -610,7 +603,6 @@
       z-index: 2;
     }
   }
-
   &_img{
     position: absolute;
     padding: 0;
@@ -621,7 +613,6 @@
     flex-direction: column;
     align-items: center;
     justify-content: flex-end;
-
     .img-time{
       position: absolute;
       height: 100%;
@@ -643,20 +634,20 @@
       .bsol{
         border-top-left-radius: 30px;
         border-bottom-left-radius: 30px;
-        padding-right: 20px;
+        padding-right: 15px;
       }
       .bluna{
         border-top-right-radius: 30px;
         border-bottom-right-radius: 30px;
-        padding-left: 20px;
+        padding-left: 15px;
       }
       button{
         background-color: $white;
-        padding: 10px 25px;
+        padding: 9px 20px;
         border-style: none;
         .img-boton {
           width: 100%;
-          max-width: 30px;
+          max-width: 22px;
           path {
             fill: #8A5874;
           }
@@ -671,7 +662,6 @@
           }
         }
       }
-
     }
   }
 }
@@ -749,7 +739,7 @@
 /*----------------------------Gallery-----------------------------------*/
 .amenities-footer{
   padding-bottom: 0;
-  padding-top: 20px;
+  padding-top: 0;
   &_right{
     position: absolute;
     right: 0;
