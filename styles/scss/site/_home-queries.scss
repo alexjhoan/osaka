@@ -317,19 +317,23 @@
       }
     }
     &_banner{
-      background-image: url(../../assets/images/landscape/fondom.png);
-      background-position: top;
-      background-size: cover;
-      background-repeat: no-repeat;
-      padding-top: 100px;
+      // background-image: url(../../assets/images/landscape/fondom.png);
+      // background-position: top;
+      // background-size: cover;
+      // background-repeat: no-repeat;
+      // padding-top: 100px;
       padding-bottom: 0;
-      margin-top: 370px;
+      // margin-top: 370px;
       &::after{
         display: none;
       }
       .col-left {
         padding-bottom: 80px;
-        padding-top: 45px;
+        background-image: url(../../assets/images/landscape/fondom.png);
+        background-position: top;
+        background-size: cover;
+        padding-top: 80px;
+        margin-top: -40px;
       }
     }
     &_img{
