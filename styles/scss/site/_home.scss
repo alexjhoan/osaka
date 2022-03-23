@@ -417,6 +417,7 @@
     cursor: pointer;
     &.active{
       opacity:1;
+      pointer-events: none;
     }
     &:not(.active):hover{
       opacity: 1;
@@ -432,6 +433,7 @@
     cursor: pointer;
     &.active{
       opacity:1;
+      pointer-events: none;
     }
     &:not(.active):hover{
       opacity: 1;
