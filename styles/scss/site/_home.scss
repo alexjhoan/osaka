@@ -37,15 +37,15 @@
   &_right{
     position: relative;
     z-index: 1;
-    padding: 31px 25px;
+    padding: 30px 12px;
     &::before{
       content: "";
       position: absolute;
       height: 100%;
       background: #fff;
       z-index: 1;
-      width: 155%;
-      left: -50%;
+      width: 151%;
+      right: 15px;
       top: 0;
     }
     img.logo{
@@ -600,8 +600,8 @@
       line-height: 0.6;
     }
     .col-left{
-      padding-bottom: 80px;
-      padding-top: 80px;
+      padding-bottom: 120px;
+      padding-top: 120px;
       z-index: 2;
     }
   }
