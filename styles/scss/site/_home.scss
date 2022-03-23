@@ -838,7 +838,8 @@
 /*----------------------------Project-------------------------------*/
 .project{
   text-align: center;
-  .text-center.w-75 {
+  .text.text-center {
+    width: 75%;
     margin-left: auto;
     margin-right: auto;
   }

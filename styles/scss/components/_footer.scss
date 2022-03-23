@@ -1,6 +1,6 @@
 .footer {
   background-color: #F7F7F7;
-  padding: 50px;
+  padding: 50px 0;
   &_logo {
     display: flex;
     flex-direction: row;
@@ -42,7 +42,7 @@
         margin-bottom: 10px;
       }
       img {
-        width: calc(100% - 60px);
+        width: calc(100% - 10px);
       }
     }
   }
