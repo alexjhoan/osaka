@@ -2,6 +2,14 @@
   .landscape_img .img-time {
     height: 99.8%;
   }
+  .amenities-footer{
+    &_right {
+      bottom: -41px;
+    }
+  }
+  .advance {
+    margin-top: 41px;
+  }
 }
 @media (max-width: 1399.98px) {
   #unitsGallery {
@@ -122,14 +130,14 @@
   }
   .amenities-footer{
     &_right {
-      bottom: -6px;
+      bottom: 0px;
       .imgA{
         max-width: 550px;
       }
     }
   }
   .advance {
-    margin-top: 7px;
+    margin-top: 0px;
   }
 }
 @media (max-width: 991.98px) {
