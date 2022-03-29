@@ -400,6 +400,9 @@
       width: 22px;
       height: auto;
     }
+    span{
+      text-transform: capitalize;
+    }
   }
   #nameLevel3{
     color: $primary;
@@ -410,6 +413,9 @@
     img{
       width: 22px;
       height: auto;
+    }
+    span{
+      text-transform: capitalize;
     }
   }
   .edf-select{
