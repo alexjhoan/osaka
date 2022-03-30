@@ -1,19 +1,3 @@
-@media (min-width: 1600px){
-  .descriptions{
-    &_image{
-      .imgleft {
-        max-width: 450px;
-        width: 100%;
-      }
-    }
-  }
-}
-@media(min-width: 1440px){
-  .amenities_banner_img img {
-    max-width: 500px;
-  }
-
-}
 @media(min-width: 1400px){
   .landscape_img .img-time {
     height: 99.8%;
@@ -27,8 +11,33 @@
     margin-top: 41px;
   }
 }
+@media(min-width: 1440px){
+  .descriptions{
+    img.imgleft {
+      max-width: 535px;
+    }
+    &_logos{
+      column-gap: 100px;
+    }
+  }
+  .amenities_banner_img img {
+    max-width: 500px;
+  }
+
+}
+
+@media (min-width: 1600px){
+  .descriptions{
+    img.imgleft {
+      left: -65px;
+    }
+    &_logos{
+      column-gap: 120px;
+    }
+  }
+}
 @media (max-width: 1399.98px) {
-  #unitsGallery {
+  .unitsGallery {
     width: 55%;
   }
 }
@@ -36,14 +45,18 @@
   .descriptions{
     background-image: none;
     background-color: #F7F7F7;
+    padding: 0;
     &_right{
       padding-top: 51px;
       padding-bottom: 41px;
-      padding-left: 0;
-      padding-right: 0;
+      padding-left: calc(var(--bs-gutter-x) * .5);
+      padding-right: calc(var(--bs-gutter-x) * .5);
       &::before{
         position: relative;
       }
+    }
+    &_text{
+      padding: 0;
     }
     &_banner{
       background-image: none;
@@ -138,7 +151,7 @@
       }
     }
   }
-  #unitsGallery {
+  .unitsGallery {
     width: 100%;
   }
   .amenities-footer {
@@ -157,13 +170,19 @@
   }
 }
 @media (max-width: 991.98px) {
-  #banner{
-    background-image: linear-gradient(90deg, #00000096 0%, #00000042 0%, #00000000 100%),url(../../assets/images/header/header-m.jpg);
+  .banner{
+    background-image: url(../../assets/images/header/header-m.jpg);
   }
   .locations{
     padding-bottom:25px;
     &_right{
       margin-top: 26px;
+      span{
+        &::after{
+          width: 15px;
+          height: 18px;
+        }
+      }
     }
     .educations{
       span{
@@ -236,8 +255,12 @@
     padding-top: 47px;
     padding-bottom: 39px;
     &_master {
+      div.title {
+        width: min-content;
+      }
       p{
         transform: rotate(0deg);
+        height: auto;
       }
       flex-direction: column;
       align-items: flex-start;
@@ -348,18 +371,20 @@
       }
       .col-left {
         padding-bottom: 80px;
-        padding-top: 0px;
+        padding-top: 10px;
+        position: relative;
         &::before{
           content: "";
           position: absolute;
           left: 0;
-          top: -40px;
+          top: -130px;
           width: 100%;
-          min-height: 550px;
+          min-height: 580px;
           background-image: url(../../assets/images/landscape/fondom.png);
           background-position: top;
           background-size: cover;
           z-index: -1;
+          height: 100%;
         }
       }
     }
@@ -380,7 +405,7 @@
 
     }
   }
-  #unitsGallery {
+  .unitsGallery {
     padding-bottom: 50px;
   }
   .amenities{
@@ -447,7 +472,7 @@
       }
     }
   }
-  #gallery{
+  .gallery{
     #lightgallery {
       grid-template-columns: repeat(4, 1fr);
       margin-top: 10px;
@@ -473,7 +498,17 @@
 }
 
 @media (max-width: 767.98px) {
-  #unitsGallery{
+  .locations{
+    .educations{
+      span{
+        &:first-child{
+          bottom: 28%;
+          right: 30.5%;
+        }
+      }
+    }
+  }
+  .unitsGallery{
     padding: 10px 0 0 0;
     .container .col-12 {
       padding: 0;
@@ -492,6 +527,14 @@
   .amenities-footer{
     p.h3.mb-3 {
       margin-top: 20px;
+    }
+  }
+  .landscape{
+    .col-left {
+      padding-bottom: 105px;
+      &::before{
+        top: -105px;
+      }
     }
   }
   .advance{
@@ -524,6 +567,13 @@
       transform: scale(1);
       padding: 0;
     }
+    .educations{
+      span{
+        &:first-child{
+          bottom: 30%;
+        }
+      }
+    }
   }
   .amenities{
     margin-top: 30px;
@@ -544,13 +594,23 @@
   }
   .landscape{
     &_banner{
-      margin-top: 375px;
+      margin-top: 0;
       padding-top: 50px;
+    }
+    .col-left {
+      padding-bottom: 155px;
+      &::before{
+        top: -55px;
+      }
     }
     &_img{
       height: 350px;
-      top: -58%;
+      top: 0;
+      position: relative;
     }
+  }
+  .unitsGallery {
+    margin-top: 0;
   }
   .advance{
     &_line img{
@@ -563,6 +623,24 @@
       .finish{
         width: 50%;
       }
+    }
+  }
+}
+
+@media (max-width: 475px){
+  .locations{
+    .educations{
+      span{
+        &:first-child{
+          bottom: 26%;
+          right: 29.5%;
+        }
+      }
+    }
+  }
+  .landscape{
+    .col-left {
+      padding-bottom: 95px;
     }
   }
 }
@@ -659,6 +737,11 @@
       }
     }
   }
+  .landscape{
+    .col-left {
+      padding-bottom: 55px;
+    }
+  }
   .advance{
     &_line img{
       width: 75%;
@@ -674,6 +757,16 @@
   }
 }
 @media (max-width: 375px){
+  .locations{
+    .educations{
+      span{
+        &:first-child{
+          bottom: 24%;
+          right: 28.5%;
+        }
+      }
+    }
+  }
   .units{
     &_download{
       .down{
@@ -694,17 +787,11 @@
   .amenities-footer {
     margin-top: 20px;
   }
+}
+@media (max-width: 361px){
   .landscape{
-    &_banner{
-      margin-top: 320px;
-      .col-left{
-        &::before{
-          min-height:600px;
-        }
-      }
-    }
-    &_img{
-      top: -45%;
+    .col-left {
+      padding-bottom: 15px;
     }
   }
 }

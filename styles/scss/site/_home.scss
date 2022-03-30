@@ -1,6 +1,6 @@
 /*----------------------------banner-header-------------------------------*/
-#banner{
-  background-image: linear-gradient(90deg, #00000096 0%, #00000042 0%, #00000000 100%),url(../../assets/images/header/header-d.jpg);
+.banner{
+  background-image:url(../../assets/images/header/header-d.jpg);
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -44,9 +44,10 @@
       height: 100%;
       background: #fff;
       z-index: 1;
-      width: 151%;
-      right: 15px;
+      width: 160%;
+      right: 0;
       top: 0;
+      box-shadow: 7px 6px 28px #00000021;
     }
     img.logo{
       max-width: 150px;
@@ -54,14 +55,21 @@
       margin-bottom: 18px;
     }
   }
+  img.imgleft {
+    max-width: 500px;
+    position: absolute;
+    left: -80px;
+    top: -15px;
+  }
   &_text{
     position: relative;
     z-index: 2;
+    padding: 0 40px;
   }
   &_table{
     display: flex;
     flex-direction: row;
-    justify-content: space-around;
+    justify-content: space-between;
     margin-top: 18px;
     p{
       margin-bottom: 0;
@@ -78,7 +86,7 @@
     display: flex;
     flex-direction: row;
     align-items: center;
-    column-gap: 65px;
+    column-gap: 90px;
     margin-top: 24px;
     .text {
       display: flex;
@@ -106,7 +114,7 @@
   h2.h3{
     margin-bottom: 20px;
   }
-    &_item{
+  &_item{
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -314,18 +322,26 @@
 .units-design{
   background-color: $secondary;
   text-align: center;
-  .h2 {
+  h2 {
     margin-bottom: 20px;
     font-weight: 600;
   }
   &_master {
+    div.title{
+      width: 80px;
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      justify-content: center;
+    }
     p{
       font-family: 'Kanit';
       color: $primary;
       font-weight: 300;
       transform: rotate(-90deg);
       margin-bottom: 0;
-      width: 70px;
+      height: 0;
+      font-size: 1.5rem;
     }
     margin-top: 34px;
     display: flex;
@@ -461,9 +477,16 @@
       margin-right: auto;
     }
   }
-  .edfLevelUrl, .edfLevelUrl3{
+  .edfLevelUrl{
     text-align: center;
-    .edfImgLevel, .edfImgLevel3{
+    .edfImgLevel{
+      max-width: 280px;
+      width: 100%;
+    }
+  }
+  .edfLevelUrl3{
+    text-align: center;
+  .edfImgLevel3{
       max-width: 350px;
       width: 100%;
     }
@@ -479,7 +502,7 @@
       justify-content: space-between;
     }
     .measures{
-      width: 15px;
+      width: 20px;
       margin-right: 10px;
     }
     .down {
@@ -505,7 +528,7 @@
     width: 50%;
     margin-left: auto;
     margin-right: auto;
-    margin-top: 42px;
+    margin-top: 70px;
     margin-bottom: 70px;
   }
 }
@@ -674,7 +697,7 @@
   }
 }
 /*----------------------------Gallery-----------------------------------*/
-#unitsGallery {
+.unitsGallery {
   width: 1000px;
   margin-left: auto;
   margin-right: auto;
@@ -804,7 +827,7 @@
   }
 }
 /*---------------------------Gallery-------------------------------*/
-#gallery{
+.gallery{
   background-color: #F7F7F7;
   padding-bottom: 27px;
   padding-top: 0;

@@ -61,6 +61,11 @@ $(".edfLevelUrl").fancybox({
     closeClick : true,
   }
 });
+$(".edfLevelUrl3").fancybox({
+  overlay : {
+    closeClick : true,
+  }
+});
 
 $('header').load('components/header.html')
 $('footer').load('components/footer.html')

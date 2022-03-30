@@ -43,12 +43,17 @@ section {
   border-radius: 36px;
   padding: 10px 40px;
   color: $white;
+  box-shadow: 3px 3px 8px #00000075;
 }
 
-.btn.btn-primary:hover, .btn.btn-primary:active, .btn.btn-primary:focus{
+.btn.btn-primary:hover,  .btn.btn-primary:focus{
   background-color: $btn-hover!important;
   border-color: $btn-hover!important;
-  box-shadow: none!important;
+  // box-shadow: none!important;
+}
+.btn.btn-primary:active{
+    background-color: $primary;
+    border-color: $primary;
 }
 /*----------------------------Queries-------------------------------*/
 
