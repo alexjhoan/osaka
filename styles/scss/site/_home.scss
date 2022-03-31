@@ -480,22 +480,23 @@
   .edfLevelUrl{
     text-align: center;
     .edfImgLevel{
-      max-width: 280px;
+      max-width: 350px;
       width: 100%;
     }
   }
   .edfLevelUrl3{
     text-align: center;
   .edfImgLevel3{
-      max-width: 350px;
+      max-width: 450px;
       width: 100%;
     }
   }
   &_download {
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
+    justify-content: center;
     margin-top: 15px;
+    column-gap:60px;
     &_b{
       display: flex;
       flex-direction: row;

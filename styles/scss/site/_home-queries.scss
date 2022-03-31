@@ -187,7 +187,7 @@
   .locations{
     padding-bottom:25px;
     &_right{
-      margin-top: 26px;
+      // margin-top: 26px;
       span{
         &::after{
           width: 15px;
@@ -606,12 +606,12 @@
   .landscape{
     &_banner{
       margin-top: 0;
-      padding-top: 50px;
     }
     .col-left {
       padding-bottom: 155px;
       &::before{
         top: -55px;
+        min-height: 110%;
       }
     }
     &_img{
@@ -787,6 +787,13 @@
         transform: translateY(0);
         margin-left: 2px;
         width: 22px;
+      }
+    }
+  }
+  .landscape{
+    .col-left {
+      &::before{
+        min-height: 111%;
       }
     }
   }
