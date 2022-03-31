@@ -200,13 +200,13 @@
           bottom: 31.5%;
         }
         &:nth-child(2){
-          top: 24.5%;
+          top: 25%;
         }
         &:nth-child(3){
           top: 12%;
         }
         &:last-child{
-          bottom: 35%;
+          bottom: 36%;
           right: 3.8%;
         }
       }
@@ -224,12 +224,12 @@
           right: 41%;
         }
         &:nth-child(4){
-          bottom: 29%;
+          bottom: 30%;
           right: 43%;
         }
         &:last-child{
-          bottom: 0%;
-          right: 8%;
+          bottom: 1%;
+          right: 7%;
         }
       }
     }
@@ -242,7 +242,7 @@
           bottom: 8.3%;
         }
         &:nth-child(3){
-          top: 31%;
+          top: 30%;
         }
         &:last-child{
           top: 30.5%;
@@ -636,7 +636,7 @@
   }
   .unitsGallery {
     margin-top: 0;
-    padding-top: 2px;
+    padding-top: 5px;
   }
   .advance{
     &_line img{
