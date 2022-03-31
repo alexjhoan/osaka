@@ -187,11 +187,10 @@
   .locations{
     padding-bottom:25px;
     &_right{
-      // margin-top: 26px;
       span{
         &::after{
           width: 15px;
-          height: 18px;
+          height: 15px;
         }
       }
     }
@@ -296,6 +295,13 @@
     padding-top: 39px;
     #nameLevel {
       margin-top: 25px;
+    }
+    .edfLevelUrl{
+      .edfImgLevel{
+        max-width: 100%;
+        width: auto;
+        height: 275px;
+      }
     }
   }
   .modal{
@@ -544,7 +550,7 @@
     .col-left {
       padding-bottom: 105px;
       &::before{
-        top: -105px;
+        top: -120px;
       }
     }
   }
@@ -622,6 +628,7 @@
   }
   .unitsGallery {
     margin-top: 0;
+    padding-top: 2px;
   }
   .advance{
     &_line img{

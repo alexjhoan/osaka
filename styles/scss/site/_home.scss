@@ -480,14 +480,14 @@
   .edfLevelUrl{
     text-align: center;
     .edfImgLevel{
-      max-width: 350px;
+      max-width: 280px;
       width: 100%;
     }
   }
   .edfLevelUrl3{
     text-align: center;
   .edfImgLevel3{
-      max-width: 450px;
+      max-width: 400px;
       width: 100%;
     }
   }
@@ -657,7 +657,7 @@
       z-index: 2;
       display: flex;
       align-items: center;
-      text-shadow: 0 6px 6px #494846;
+      text-shadow: 2px 2px 5px black;
       p{
         color: $white;
         font-weight: 500;
