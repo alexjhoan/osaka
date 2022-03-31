@@ -151,6 +151,17 @@
       }
     }
   }
+  .modal {
+    .modal-content {
+      .modal-body{
+        .swiper-slide{
+          .col-right{
+            column-gap: 8px;
+          }
+        }
+      }
+    }
+  }
   .unitsGallery {
     width: 100%;
   }
