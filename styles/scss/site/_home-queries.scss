@@ -197,13 +197,13 @@
     .educations{
       span{
         &:first-child{
-          bottom: 30%;
+          bottom: 31.5%;
         }
         &:nth-child(2){
-          top: 25.5%;
+          top: 24.5%;
         }
         &:nth-child(3){
-          top: 13%;
+          top: 12%;
         }
         &:last-child{
           bottom: 35%;
@@ -228,7 +228,7 @@
           right: 43%;
         }
         &:last-child{
-          bottom: 1%;
+          bottom: 0%;
           right: 8%;
         }
       }
@@ -236,16 +236,16 @@
     .shopping{
       span{
         &:first-child{
-          bottom: 1%;
+          bottom: 2%;
         }
         &:nth-child(2){
           bottom: 8.3%;
         }
         &:nth-child(3){
-          top: 32%;
+          top: 31%;
         }
         &:last-child{
-          top: 31.5%;
+          top: 30.5%;
         }
       }
     }
@@ -284,6 +284,9 @@
       margin-bottom: 0;
       &_text{
         align-items: center;
+        h5{
+          text-align: center;
+        }
         &::before{
           content: none;
         }
@@ -387,16 +390,16 @@
         display: none;
       }
       .col-left {
-        padding-bottom: 80px;
+        padding-bottom: 45px;
         padding-top: 10px;
         position: relative;
+        background: linear-gradient(to bottom, rgba(231,214,224,0) 0%, rgba(231,214,224,0) 52%, rgba(231,214,224,1) 58%, rgba(231,214,224,1) 100%);
         &::before{
           content: "";
           position: absolute;
           left: 0;
           top: -130px;
           width: 100%;
-          min-height: 580px;
           background-image: url(../../assets/images/landscape/fondom.png);
           background-position: top;
           background-size: cover;
@@ -555,7 +558,6 @@
   }
   .landscape{
     .col-left {
-      padding-bottom: 105px;
       &::before{
         top: -127px;
       }
@@ -621,10 +623,9 @@
       margin-top: 0;
     }
     .col-left {
-      padding-bottom: 155px;
+      padding-top: 45px;
       &::before{
         top: -55px;
-        min-height: 110%;
       }
     }
     &_img{
@@ -661,11 +662,6 @@
           right: 29.5%;
         }
       }
-    }
-  }
-  .landscape{
-    .col-left {
-      padding-bottom: 95px;
     }
   }
 }
@@ -762,11 +758,6 @@
       }
     }
   }
-  .landscape{
-    .col-left {
-      padding-bottom: 55px;
-    }
-  }
   .advance{
     &_line img{
       width: 75%;
@@ -810,13 +801,6 @@
       }
     }
   }
-  .landscape{
-    .col-left {
-      &::before{
-        min-height: 111%;
-      }
-    }
-  }
   .amenities{
     &_banner{
       transform: translateY(80px);
@@ -824,12 +808,5 @@
   }
   .amenities-footer {
     margin-top: 20px;
-  }
-}
-@media (max-width: 361px){
-  .landscape{
-    .col-left {
-      padding-bottom: 15px;
-    }
   }
 }
