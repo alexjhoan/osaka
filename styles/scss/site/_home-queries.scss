@@ -300,7 +300,7 @@
       .edfImgLevel{
         max-width: 100%;
         width: auto;
-        height: 275px;
+        height: 350px;
       }
     }
   }
@@ -522,6 +522,13 @@
           bottom: 28%;
           right: 30.5%;
         }
+      }
+    }
+  }
+  .units{
+    &_download {
+      a, button{
+        font-size: 0.8rem;
       }
     }
   }
@@ -787,8 +794,14 @@
   }
   .units{
     &_download{
+      column-gap: 45px;
       .down{
         margin-right: 0px;
+        margin-right: 0px;
+        width: 13px;
+      }
+      &_b{
+        align-items: center;
       }
       .zoom{
         transform: translateY(0);
