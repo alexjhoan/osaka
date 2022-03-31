@@ -657,12 +657,11 @@
       z-index: 2;
       display: flex;
       align-items: center;
-      text-shadow: 2px 2px 5px black;
       p{
         color: $white;
         font-weight: 500;
         margin-right: 20px;
-
+        text-shadow: 2px 2px 5px black;
       }
       .bsol{
         border-top-left-radius: 30px;
