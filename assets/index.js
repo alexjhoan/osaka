@@ -138,7 +138,7 @@ const galleryThumbs = new Swiper('.gallery-thumbs', {
   watchSlidesProgress: true,
 });
 const galleryTop = new Swiper('.gallery-top', {
-  spaceBetween: 10,
+  spaceBetween: 0,
   loop: true,
   navigation: {
     nextEl: '.swiper-button-next',
