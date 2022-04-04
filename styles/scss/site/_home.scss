@@ -465,10 +465,12 @@
     }
     &:not(.active):hover{
       opacity: 1;
-      .cls-6{
-        fill: transparent;
+      .st10{
         stroke: $primary ;
         stroke-width: 5px;
+      }
+      .st9 {
+        fill: transparent;
       }
     }
   }
