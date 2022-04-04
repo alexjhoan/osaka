@@ -6,6 +6,9 @@
   background-repeat: no-repeat;
   height: 100vh;
   padding-top: 150px;
+  .btn.btn-primary {
+    box-shadow: 3px 3px 8px #00000075;
+  }
   h1, p{
     color: $white;
   }
@@ -441,9 +444,12 @@
       opacity:1;
       pointer-events: none;
     }
+    .cls-12{
+      fill: #e1c0d9;
+    }
     &:not(.active):hover{
       opacity: 1;
-      .cls-6{
+      .cls-12{
         fill: transparent;
         stroke: $primary ;
         stroke-width: 5px;

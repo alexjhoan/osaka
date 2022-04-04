@@ -56,6 +56,11 @@ if (screen.width > 768){
 
 new WOW({offset:offset, scrollContainer: null}).init()
 
+$(".homeDesign").fancybox({
+  overlay : {
+    closeClick : true,
+  }
+});
 $(".edfLevelUrl").fancybox({
   overlay : {
     closeClick : true,
