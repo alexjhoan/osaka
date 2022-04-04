@@ -220,7 +220,7 @@
 		<polygon class="st7" points="132.6,141.5 136.6,141.1 136.8,168.6 132.7,168.8 		"/>
 	</g>
 </g>
-<g id="planta_baja" class="edf-select3">
+<g id="planta_baja" data-name="planta_alta" class="edf-select3 active">
 	<path id="Trazado_11327-3" class="st9" d="M122.9,204.8l210.2,5.3l218.2-3.3l0.5,112.6l-214,31.4l-214.9-46
 		C122.9,304.8,122.9,204.8,122.9,204.8z"/>
 	<path id="Trazado_11329" class="st10" d="M122.9,204.8l210.2,5.3l218.2-3.3l0.5,112.6l-214,31.4l-214.9-46
@@ -235,7 +235,7 @@
 		<text transform="matrix(1 0 0 1 50.7541 258.1345)" class="st15 st16 st17">BAJA</text>
 	</g>
 </g>
-<g id="planta_alta" class="edf-select3">
+<g id="planta_alta" data-name="planta_alta"  class="edf-select3">
 	<path id="Trazado_11327" class="st9" d="M120.8,204.9l210.2,5.3l256.9-3.3l-0.4-141.3l-257-39.2L152,66l0.2,6.1l-31.4,6.5
 		C120.8,78.6,120.8,204.9,120.8,204.9z"/>
 	<path id="Trazado_11327-2" class="st10" d="M120.8,203.9l210.2,5.3l256.9-3.3l-0.4-141.3l-257-39.2L152,65l0.2,6.1l-31.4,6.5
