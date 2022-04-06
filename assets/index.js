@@ -190,7 +190,7 @@ function dataSubmited(data) {
     'Content-type': 'application/json; charset=UTF-8',
     },
   };
-  fetch("https://www.infocasas.com.uy/proyectos/torre-munich?&formulario=1&json=1", requestOptions)
+  fetch("https://www.infocasas.com.uy/proyectos/osaka?&formulario=1&json=1", requestOptions)
   .then((json) => {
     setTimeout(()=>{
       if (json.status === 200) {
