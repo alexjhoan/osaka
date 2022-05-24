@@ -221,7 +221,7 @@ function submited() {
     tel: form.phone.value,
     source: 2,
     utm_source: "web_cliente",
-    utm_medium: "austin",
+    utm_medium: "osaka",
     extra: form.consult.value,
     InfoLeads: 1,
     IDflow_execution: 4315
