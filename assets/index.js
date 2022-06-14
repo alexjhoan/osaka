@@ -178,6 +178,7 @@ if (screen.width > 768){
       const mygallery = new Swiper(".swiper", {
         pagination: {
           el: ".swiper-pagination",
+          clickable: true,
         },
       })
   }
