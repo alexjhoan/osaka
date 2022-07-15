@@ -99,7 +99,7 @@ var chart = new Chart(ctx, {
             backgroundColor: ['#976480','#cecece'],
             borderColor: '#CDAC7D',
             borderWidth: 0,
-            data: [43,57],
+            data: [50,50],
         }]
     },
     // Configuration options go here
